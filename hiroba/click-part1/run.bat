@@ -1,0 +1,1 @@
+java -jar toollib/winstone.jar --commonLibFolder=toollib/common --warfile=build\click_sample.war --javaHome="%JAVA_HOME%" --debug=9

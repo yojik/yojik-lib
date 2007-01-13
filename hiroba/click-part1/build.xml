@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="Shift_JIS" ?>
+<project default="compile"  xmlns:artifact="urn:maven-artifact-ant">
+  <!-- プロキシーを利用したい方は以下の行を書き換えてください -->
+  <!-- <setproxy  proxyhost="***" proxyport="***" proxyuser="***" proxypassword="***" /> -->
+  <property name="lib.dir" value="lib"></property>
+  <property name="toollib.dir" value="lib"></property>
+  <property name="src.dir" value="src"/>
+  <property name="build.dir" value="build"/>
+  <property name="classes.dir" value="${build.dir}/classes"/>
+  <property name="webapps.dir" value="webapps"/>
+  <property name="web-inf.dir" value="${webapps.dir}/WEB-INF"/>
+  <property name="warfile" value="${build.dir}/click_sample.war"/>
+  <property name="app.jar" value="${build.dir}/app.jar"/>
+  <property name="url" value="http://localhost:8080/manager"/>
+  <property name="user" value="admin"/>
+  <property name="password" value="admin"/>
+  <property name="app" value="click_sample"/>
+  <path id="lib.jars">
+    <fileset dir="${lib.dir}">
+      <include name="**/*.jar"></include>
+    </fileset>
+  </path>
+  <path id="toollib.jars">
+    <fileset dir="${toollib.dir}">
+      <include name="**/*.jar"></include>
+    </fileset>
+  </path>
+  <target name="init">
+    <mkdir dir="${src.dir}"/>
+    <mkdir dir="${lib.dir}"/>
+    <mkdir dir="${classes.dir}"/>
+  </target>
+
+  <target name="pre_setup_lib">
+    <mkdir dir="local-repo/javax/transaction/jta/1.0.1B/"/>
+    <get src="http://www.ibiblio.org/maven2/org/apache/geronimo/specs/geronimo-jta_1.0.1B_spec/1.0/geronimo-jta_1.0.1B_spec-1.0.jar"
+      dest="local-repo/javax/transaction/jta/1.0.1B/jta-1.0.1B.jar"
+      usetimestamp="true" />
+  </target>
+  
+  <target name="setup_lib" description="ライブラリをダウンロードしセットアップします" depends="pre_setup_lib">
+    <typedef resource="org/apache/maven/artifact/ant/antlib.xml" uri="urn:maven-artifact-ant">
+      <classpath path="toollib/maven-artifact-ant-2.0.4-dep.jar"/>
+    </typedef>
+    <artifact:dependencies pathId="dependency.classpath" filesetId="local-repo.files">
+      <localRepository location="local-repo"/>
+      <dependency groupId="org.hibernate" artifactId="hibernate" version="3.2.1.ga" />
+      <dependency groupId="org.hibernate" artifactId="hibernate-annotations" version="3.2.0.ga" />
+      <dependency groupId="hsqldb" artifactId="hsqldb" version="1.8.0.4"/>
+      <!-- <dependency groupId="net.sf.click" artifactId="click" version="1.0"/> -->
+      <!-- <dependency groupId="net.sf.click" artifactId="click-extras" version="1.0"/> -->
+      <!-- <dependency groupId="org.hibernate" artifactId="hibernate-entitymanager" version="3.2.0.ga" /> -->
+    </artifact:dependencies>
+    <copy todir="lib">
+      <mapper type="flatten"/>
+      <fileset refid="local-repo.files"/>
+	</copy>
+    <copy todir="lib">
+      <fileset dir="clicklib" includes="**/*.jar"/>
+    </copy>
+  </target>
+
+  <target name="compile"  description="コンパイルします"  depends="init">
+    <copy todir="${classes.dir}">
+      <fileset dir="${src.dir}">
+		<include name="**/*.xml"/>
+		<include name="**/*.properties"/>
+      </fileset>
+    </copy>
+    <javac debug="on" destdir="${classes.dir}" >
+      <classpath>
+		<path refid="lib.jars"></path>
+		<path refid="toollib.jars"></path>
+      </classpath>
+      <src path="${src.dir}"/>
+    </javac>
+  </target>
+
+  <target name="jar"  description="jarファイルのみを作成します"  depends="compile">
+	<jar jarfile="${app.jar}">
+	  <fileset dir="${classes.dir}">
+		<include name="**/*.class"/>
+		<include name="**/*.xml"/>
+	  </fileset>
+	  <!--  ejb3等を利用される方はこちら -->
+	  <!--
+		<fileset dir="resources">
+		<include name="META-INF/persistence.xml"/>
+		</fileset>
+        -->
+	</jar>
+  </target>
+  
+  <target name="clean"  description="生成物をクリーンアップします" >
+    <delete dir="${classes.dir}"/>
+    <delete dir="${user.home}/Local Settings/Temp/winstone/"/>
+    <delete file="${warfile}"/>
+  </target>
+  <target name="clean_lib" description="ライブラリディレクトリをクリーンアップします" >
+    <delete>
+      <fileset dir="${lib.dir}" includes="**/*.jar"/>
+      <fileset dir="local-repo">
+		<include name="**/*.jar"/>
+      </fileset>
+    </delete>
+  </target>
+
+  <target name="start"  description="Webコンテナを起動します"  depends="war">
+    <java jar="toollib/winstone.jar"
+      fork="true"
+      failonerror="true">
+      <arg line="--warfile build/click_sample.war"/>
+      <arg line="--commonLibFolder=toollib/common"/>
+      <arg line="--javaHome=%JAVA_HOME%" />
+      <arg line="--debug=9"/>
+    </java>
+  </target>
+
+  <target name="war"  description="warファイルを作成します"  depends="jar">
+    <delete file="${warfile}"/>
+    <delete dir="${user.home}/Local Settings/Temp/winstone/"/>
+    <war warfile="${warfile}" webxml="${web-inf.dir}/web.xml">
+      <fileset dir="${webapps.dir}">
+		<include name="**/*"/>
+		<exclude name="**/WEB-INF/**/*"/>
+      </fileset>
+      <!-- ソースコードを同封することによってClickのデフォルトエラー画面が華やかに! -->
+      <zipfileset dir="${src.dir}" prefix="WEB-INF/src">
+		<include name="**/*.java"/>
+      </zipfileset>
+      <webinf dir="${web-inf.dir}">
+		<exclude name="**/web.xml"/>
+	  </webinf>
+      <!-- 外部ライブラリファイルをWEB-INF/libフォルダの下に配置 -->
+      <lib dir="${lib.dir}">
+	  	<exclude name="**/servlet-api-*.jar"/>
+	  </lib>
+      <!-- ビルドしたappファイルをWEB-INF/libフォルダに配置 -->
+      <lib dir="${build.dir}" includes="app.jar" />
+    </war>
+  </target>
+</project>

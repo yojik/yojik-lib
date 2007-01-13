@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="Windows-31J" ?>
+<click-app charset="Windows-31J" locale="ja">
+  <headers>
+    <header name="Pragma" value="no-cache"/>
+    <header name="Cache-Control" value="no-store, no-cache, must-revalidate, post-check=0, pre-check=0"/>
+    <header name="Expires" value="1" type="Date"/>
+  </headers>
+  <pages package="sample.view">
+    <excludes pattern="/tiny_mce/"/>
+  </pages>
+  <mode value="trace"/>
+</click-app>
