@@ -25,8 +25,8 @@
     <meta name="controlVis" content="hidden" />
     <!-- configuration extensions -->
     <meta name="tranSitions" content="true" />
-    <meta name="fadeDuration" content="500" />
-    <meta name="incrDuration" content="250" />
+    <meta name="fadeDuration" content="150" />
+    <meta name="incrDuration" content="150" />
     <!-- style sheet links -->
     <link rel="stylesheet" href="ui/advanced_gfx/slides.css" type="text/css" media="projection" id="slideProj" />
     <link rel="stylesheet" href="ui/advanced_gfx/outline.css" type="text/css" media="screen" id="outlineStyle" />
@@ -851,7 +851,9 @@
 	  <li>ソフトウェアを単純に分割するだけじゃなく、オブジェクト自体が独立して動く世界を目指していた</li>
 	  <li>カール・ヒューイットによるActor理論のような理論的基盤も作成された</li>
 	  <li>分散処理は計算機リソースが限られた時代の要請でもあった
-	    <!--   <li>(Multicsなどもこの頃)</li>  </ul> -->
+	    <ul>
+	      <li>(Multicsなどもこの頃)</li>
+	    </ul> 
 	  </li>
 	  <li>しかし当時の環境ではあまりに野心的な試みだった</li>
 	</ul>
@@ -859,16 +861,99 @@
       </div>
 
       <div class="slide">
-	<h1>Part7(未来編)</h1>
-	<h2>大村君たのんだ</h2>
-	<div class="notes"></div>
+	<h1>OO厨々トレイン</h1>
+	<h2>未来編</h2>
+	<h3>大村 伸吾</h3>
+	<h4>株式会社オージス総研</h4>
       </div>
-	
+
+
+      <div class="slide">
+	<h1>Part7(未来編)</h1>
+	<h2>オブジェクト指向から見えてくる近未来！？ </h2>
+     	<ul>
+	  <li>多種多様なDSLの出現</li>
+	  <li> 関数（宣言）型言語の普及
+	    <ul>
+	      <li>オブジェクト指向言語と関数型言語の融合</li>
+	    </ul>
+	  </li>
+	  <li>分散処理から分散プログラミングへ
+            <ul>
+	      <li>（アクターモデルプログラミングへ）</li>
+	    </ul>
+	  </li>
+	</ul>
+	<img class="timeline" src="img/timeline6.png"/>
+      </div>
+      
+
+      <div class="slide">
+	<h1>多様なDSLの出現 </h1>
+	<h2>背景</h2>
+	<ul>
+	  <li>DDDによるドメインを重要視した開発</li>
+	  <li>特定ドメインの処理を汎用言語で処理することへの疑問</li>
+	</ul>
+	<h2>要求される技術</h2>
+	<ul>
+	  <li>良いDSLを設計できるドメインスペシャリスト</li>
+          <li>DSL処理系を効率よく生み出せる手段
+	    <ul>
+	      <li>関数型言語によるパーサジェネレータ</li>
+	      <li>RubyのブロックやLispのマクロといった言語内DSLに使える機能</li>
+	      <li>ランゲージワークベンチ</li>
+	  </li>
+	</ul>
+      </div>
+ 
+      <div class="slide">
+	<h1>オブジェクト指向言語と関数型言語の融合</h1>
+	<h2>以下のような力をもった言語が必要になる</h2>
+	<ul>
+	  <li>関数型言語のパワーをつかった宣言的なDSL定義</li>
+          <li>オブジェクト指向技術の遺産の活用</li>
+	  <li>必要に応じて関数型っぽく、オブジェクト指向っぽく記述できる、記述容易性</li>
+	</ul>
+	オブジェクト指向の言語と関数型言語の特性をもった言語が望ましい。
+	Scalaなど
+      </div>
+ 
+      <div class="slide">
+	<h1>分散処理から分散プログラミングへ</h1>
+	<h2>背景</h2>
+	<ul>
+	  <li>大量のリクエスト処理するアプリケーションの&台頭</li>
+          <li>Mooreの法則の崩壊を視野に入れたCPUのメニーコア化</li>
+	  <!-- これ意味教えて + 同時に複数の処理の流れを局所的に作ることが必要 -->
+          <li>「分散」が単な処理方式ではなくソフトウェア設計の基本的なパラダイムへ</li>
+	</ul>
+      </div>
+
+     <div class="slide">
+       <h1>分散処理から分散プログラミングへ</h1>
+       <h2>必要となる技術</h2>
+       <ul>
+	 <li>アクターモデル,π計算の適用</li>
+	 <li>複数の計算主体が、通信しながら全体としての計算を進めていく</li>
+	 <li>メッセージ処理のためのガードや強力なパターンマッチングなどの処理 </li>
+         <li>アクター指向をサポートした言語 (Scala等)</li>
+       </ul>
+     </div>
+ 
+     <div class="slide">
+       <h1>分散処理から分散プログラミングへ</h1>
+       <h2>ちなみに</h2>
+       <p>アクター理論はオブジェクト指向の影響をモロに受けています</p>
+     </div>
+
+
+      
       <div class="slide">
 	<h1>Part8(まとめ) ～時代は廻る～</h1>
 	<p>過去の人たちも同じような問題に同じように悩んでた!! それを知り引き継いで先に進もう</p>
 	<ul>
-	  <li>因果は円環ではなく螺旋なのです(ベルセリク)</li>
+	  <li>因果は円環ではなく螺旋なのです(ベルセルク)</li>
 	  <li>一回転すればほんの少しだけ前に進む、それがドリルなんだよ！！(グレンラガン)</li>
 	  <li>過去が希望をくれる(仮面ライダー電王)</li>
 	  <li>温故知新(論語為政篇)</li>
@@ -898,6 +983,7 @@
 	  <li>羽生田栄一さん</li>
 	  <li>kazumi007君</li>
 	  <li>umejavaさん</li>
+	  <li>yyamanoさん</li>
 	  <li>オブジェクト倶楽部のみなさん</li>
 	  <li>株式会社オージス総研のみなさん</li>
 	</ul>
