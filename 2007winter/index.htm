@@ -110,9 +110,9 @@
       
       <div class="slide">
 	<h1>自己紹介</h1>
-	<p>現在編:</p>
-	<p>過去編:</p>
-	<p>未来編:</p>
+	<p>オブジェクトの広場:</p>
+	<p></p>
+
 	<div class="notes"></div>
       </div>
       
@@ -153,13 +153,123 @@
 
       <!-- =======================================================================================  -->
       <div class="slide">
-	<h1>Part1(現代)</h1>
-	<h2>佐藤君よろしく</h2>
-	<p>
-	  DDDやRailsやSOA
-	</p>
+	<h1>OO厨々トレイン</h1>
+	<h2>現代編</h2>
+	<h3>佐藤 匡剛</h3>
+	<h4>株式会社オージス総研</h4>
+	<h4><a href="http://ameblo.jp/ouobpo" target="_blank">http://ameblo.jp/ouobpo</a></h4>
       </div>
 
+      <div class="slide">
+	<h1>Part1（現代）</h1>
+	<h2>オブジェクト指向を取り巻く現在の状況</h2>
+	<ul>
+	  <li>DI　+　AOP</li>
+	  <li>サービス指向アーキテクチャ（SOA）</li>
+	  <li>ドメイン駆動設計（DDD）</li>
+	</ul>
+	<img src="img/timeline1.png"/>
+	<div class="handout"></div>
+      </div>
+
+      <div class="slide">
+	<h1>DI + AOP</h1>
+	<h2>DI（依存性の注入）</h2>
+	<ul>
+	  <li>EJBのような超重量級コンテナに対する批判から生まれた</li>
+	  <ul>
+	    <li>Rod Johnsonによる痛烈なEJB批判（『実践J2EEシステムデザイン』）</li>
+	    <li>POJO（ピュアオブジェクト）への回帰</li>
+	    <li>Avalon Framework、HiveMind、PicoContainer、Spring・・・</li>
+	    <li>日本では2004年5月に Seasar2 がリリース</li>
+	  </ul>
+	  <li>コンポーネント同士を疎結合に組み合わせる技術</li>
+	</ul>
+	<h2>AOP（アスペクト指向プログラミング）</h2>
+	<ul>
+	  <li>元々は、オブジェクト指向批判から生まれたパラダイム</li>
+	  <ul>
+	    <li>横断的関心事の分離／モジュール化</li>
+	  </ul>
+	  <li>DIコンテナとの親和性の良さから、爆発的に普及</li>
+	  <ul>
+	    <li>宣言的トランザクション、ロギング、プロキシ・・・</li>
+	  </ul>
+	</ul>
+	<p>⇒ Java EE 5（EJB 3）も批判を受け入れて軌道修正した</p>
+	<img src="img/timeline1.png"/>
+	<div class="handout"></div>
+      </div>
+
+      <div class="slide">
+	<h1>サービス指向アーキテクチャ</h1>
+	<h2>オブジェクトからサービスへ</h2>
+	<ul>
+	  <li>システム開発が1アプリケーションを超えた視点へと広がっていく</li>
+	  <ul>
+	    <li>EA（企業全体の最適化）の視点</li>
+	    <li>SaaS（Software as a Service）</li>
+	    <li>より大きな粒度の再利用への挑戦</li>
+	  </ul>
+	  <li>SOAを支える新たな技術要素</li>
+	  <ul>
+	    <li>Webサービス meets オールドスクールEAI</li>
+	    <li>メッセージング（非同期通信）の再発見（MQ、MOM）</li>
+	    <li>新たなミドルウェアの登場（ESB、BPM）</li>
+	    <li>Java EE 5で数多く盛り込まれたWS-*仕様</li>
+	  </ul>
+	  <li>SOA時代のGoFパターン？</li>
+	  <ul>
+	    <li>『Enterprise Integration Patterns』（Hohpe&Woolf, 2003）</li>
+	  </ul>
+	</ul>
+	<img src="img/timeline1.png"/>
+	<div class="handout"></div>
+      </div>
+
+      <div class="slide">
+	<h1>ドメイン駆動設計</h1>
+	<h2>オブジェクト指向の大本命</h2>
+	<p></p>
+	<ul>
+	  <li>長年培われてきたOOベストプラクティスの集大成</li>
+	  <ul>
+	    <li>責務駆動設計（RDD）の正統な継承者</li>
+	  </ul>
+	  <li>ドメイン（＝ソフトウェア開発の真の課題）にタックル</li>
+	  <ul>
+	    <li>反復的にドメインモデルを深化させていく</li>
+	    <li>ドメインモデルを開発者・ユーザ・エキスパート間の共通言語に</li>
+	    <li>ドメインモデルと実装コードとの対応付け（＝MDD）</li>
+	  </ul>
+	  <li>40（＋1）のDDDパターン</li>
+	  <ol>
+	    <li>DDDの三原則（3パターン）</li>
+	    <li>ドメインモデルの構成要素（8＋1パターン）</li>
+	    <li>ドメインリファクタリング（7パターン）</li>
+	    <li>戦略的DDD（22パターン）</li>
+	  </ol>
+	</ul>
+	<div class="handout"></div>
+      </div>
+
+      <div class="slide">
+	<h1>DDDパターン</h1>
+	<img src="img/DDDPatterns.png"/>
+	<img src="img/timeline1.png"/>
+	<div class="handout"></div>
+      </div>
+
+
+      <div class="slide">
+	<h1>OO厨々トレイン</h1>
+	<h2>現在編</h2>
+	<h3>菅野 洋史(yojik)</h3>
+	<h4>株式会社オージス総研</h4>
+	<h4><a href="http://d.hatena.ne.jp/yojik" target="_blank">http://d.hatena.ne.jp/yojik</a></h4>
+      </div>
+
+      
       <div class="slide">
 	<h1>Part2(90年代末期-00年代前半)</h1>
 	<h2>～J2EEとアジャイル時代～ </h2>
