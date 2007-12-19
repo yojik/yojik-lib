@@ -1,0 +1,61 @@
+18
+「庶民のSmalltalk」だと庶民がSmalltalkを使っていたみたいなので
+
+Smalltalkの劣化版
+Smalltalkの焼き直し
+Smalltalkの庶民化版
+
+くらいが良いかと。
+
+26
+「当時画期的な開発環境」
+
+PARCからスピンアウトしたのはParcPlace SystemsでObjectWorksは製品名。
+ObjectWorks/C++とObjectWorks/Smalltalkが存在した。
+http://www.shinsahara.com/www/seminar/OO%20Project/all.pdf
+
+VisualWorksのGUIビルダーは基本的にNeXTSTEP のInterface Builder(1988年から存在)
+の焼き直し。
+http://en.wikipedia.org/wiki/Interface_Builder
+
+GUI開発環境としては特に画期的なものではなかった。
+
+ただし当時はC++とならぶOO言語としてSmalltalkは注目されており、眠れる獅子が
+いよいよビジネスアプリの世界に進出してきたという感はあった。
+
+FORTEやDelphiがVWの影響を受けたかというと微妙。むしろ当時注目されていたのはVisualBasicで、
+VBに対抗すべく、各社が工夫してC/Sアプリをビジュアルにつくる環境を競っていた。
+(参考にしたとすればNeXTのInterface Builder。これがほぼ最古のGUIビルダーなので)。
+
+(そうそう、全体を通じてObjective-Cの記述が抜けていますよ。Better CとしてC++とObjective-Cのどちらになるかわからない時代もありました)
+http://journal.mycom.co.jp/column/objc/001/
+
+29
+「日本では」C/SのUI部分中心
+軍事、金融、半導体部門で使われたのは海外の事例。もちろん画面だけではない。
+このころは日本と海外でOOに浸透度合いに大きな差があったように思われる。
+
+日本では確かに「別にVBでいいじゃん」的な開発が大半であった。
+
+33
+振る舞い系で名前を挙げるとすると
+RDD、OBA、OOSE、OOram
+
+http://www.s-lagoon.co.jp/OOAD2003.html
+http://heim.ifi.uio.no/~trygver/1997/9710-OOPSLA/sec1.htm
+
+Coad & Yourdon法は構造よりだが、おそらくYourdonが入っているから。
+初期のCoad自身はObject Gameをやってみたり、分析でのオブジェクトへのなりきりを重視している。
+http://www.petercoad.com/download/bookpdfs/oopch01.pdf
+
+38
+ゼックス
+ゼロックスですね
+
+また、ゼロックスのPARCがすごかったのであって富士ゼロックスはそこからの影響を強く受けたということなのでしょう。
+
+以上。
+
+なおAlanさん的にはSmalltalk-80以降は駄作です。子供が使えるものではなくなっていったため。
+OOかどうかはあまり重要ではなく、子供が使えるということが大事。
+
