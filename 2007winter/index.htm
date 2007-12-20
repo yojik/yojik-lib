@@ -72,7 +72,7 @@
     <div class="presentation">
       <div class="slide">
 	<h1><span class="red">OO</span><span class="green">厨</span>トレイン(仮題)</h1>
-	<h2>～オブジェクト指向の現在過去未来(過去編)～</h2>
+	<h2>～オブジェクト指向の現在過去未来～</h2>
 	<h3>Yoji.Kanno</h3>
 	<h4><a href="http://www.ogis-ri.co.jp" rel="external">株式会社 オージス総研</a></h4>
 	<h4><a href="http://d.hatena.ne.jp/yojik/" rel="external">http://d.hatena.ne.jp/yojik/</a></h4>
@@ -113,13 +113,21 @@
       
       <div class="slide">
 	<h1>自己紹介</h1>
-	<p>オブジェクトの広場:</p>
-	<p></p>
-
+	<p>オブジェクトの広場</p>
+	<p>株式会社オージス総研「オブジェクトの広場」の活動開始は前世紀末(1998年)にまで遡ります。当時は、日本のオブジェクト指向コミュニティを立ち上げてやろうという志で設立されました。
+	</p>
+	<p>
+	  現在は、月に一度、オブジェクト指向関連の話題を取り扱うWebマガジンを発行しています。ネタはいつでも募集中!</p>
 	<div class="notes"></div>
       </div>
       
-      
+      <div class="slide">
+	<h1>自己紹介</h1>
+	<p>佐藤 匡剛</p>
+	<p>菅野 洋史</p>
+	<p>大村 伸吾</p>
+	<p></p>
+      </div>
       
       <div class="slide">
 	<h1>旅の準備</h1>
@@ -161,7 +169,6 @@
 	<div  class="notes"></div>
       </div>
 
-      <!-- =======================================================================================  -->
       <div class="slide">
 	<h1>OO厨々トレイン</h1>
 	<h2>現代編</h2>
@@ -190,11 +197,14 @@
 	  <ul>
 	    <li>Rod Johnsonによる痛烈なEJB批判（『実践J2EEシステムデザイン』）</li>
 	    <li>POJO（ピュアオブジェクト）への回帰</li>
-	    <li>Avalon Framework、HiveMind、PicoContainer、Spring・・・</li>
+	    <li>PicoContainer、HiveMind、Spring・・・</li>
 	    <li>日本では2004年5月に Seasar2 がリリース</li>
 	  </ul>
 	  <li>コンポーネント同士を疎結合に組み合わせる技術</li>
 	</ul>
+      </div>
+      <div class="slide">
+	<h1>DI + AOP</h1>
 	<h2>AOP（アスペクト指向プログラミング）</h2>
 	<ul>
 	  <li>元々は、オブジェクト指向批判から生まれたパラダイム</li>
@@ -243,22 +253,22 @@
 	<p></p>
 	<ul>
 	  <li>長年培われてきたOOベストプラクティスの集大成</li>
-	  <ul>
-	    <li>責務駆動設計（RDD）の正統な継承者</li>
-	  </ul>
-	  <li>ドメイン（＝ソフトウェア開発の真の課題）にタックル</li>
-	  <ul>
-	    <li>反復的にドメインモデルを深化させていく</li>
-	    <li>ドメインモデルを開発者・ユーザ・エキスパート間の共通言語に</li>
-	    <li>ドメインモデルと実装コードとの対応付け（＝MDD）</li>
-	  </ul>
-	  <li>40（＋1）のDDDパターン</li>
-	  <ol>
-	    <li>DDDの三原則（3パターン）</li>
-	    <li>ドメインモデルの構成要素（8＋1パターン）</li>
-	    <li>ドメインリファクタリング（7パターン）</li>
-	    <li>戦略的DDD（22パターン）</li>
-	  </ol>
+	  <li>責務駆動設計（RDD）の正統な継承者</li>
+	  <li>ドメイン（＝ソフトウェア開発の真の課題）にタックル
+	    <ul>
+	      <li>反復的にドメインモデルを深化させていく</li>
+	      <li>ドメインモデルを開発者ユーザ間の共通言語に</li>
+	      <li>ドメインモデルと実装コードとの対応付け（＝MDD）</li>
+	    </ul>
+	  </li>
+	  <li>40（＋1）のDDDパターン
+	    <ul>
+	      <li>DDDの三原則（3パターン）</li>
+	      <li>ドメインモデルの構成要素（8＋1パターン）</li>
+	      <li>ドメインリファクタリング（7パターン）</li>
+	      <li>戦略的DDD（22パターン）</li>
+	    </ul>
+	  </li>
 	</ul>
 	<div class="handout"></div>
       </div>
@@ -269,7 +279,6 @@
 	<!-- <img src="img/timeline1.png"/> -->
 	<div class="handout"></div>
       </div>
-
 
       <div class="slide">
 	<h1>OO厨々トレイン</h1>
@@ -344,7 +353,7 @@
       </div>
 
       <div class="slide">
-	<h1>エンタープライズアーキテクチャパターンの普及</h1>
+	<h1>Patterns of Enterprise Application Architecture Pattern</h1>
 	<h2>PofEAAは大きなマイルストーン</h2>
 	<ul>
 	  <li>2000年以降のエンタープライズアプリの設計パターンの集大成</li>
@@ -527,7 +536,7 @@
 	<ul>
 	  <li>1995年 : デザインパターン
 	    <ul>
-	      <li>Erich Gamma,Richard Helm,Ralph E. Johnson,ohn Matthew Vlissides,</li>
+	      <li>Erich Gamma,Richard Helm,Ralph E. Johnson,John Matthew Vlissides,</li>
 	    </ul>
 	  </li>
 	  <li>パターンコミュニティ
@@ -1077,7 +1086,7 @@
 	  <li>umejavaさん</li>
 	  <li>yyamanoさん</li>
 	  <li>オブジェクト倶楽部のみなさん</li>
-	  <li>株式会社オージス総研のみなさん</li>
+	  <li>オブジェクトの広場のみなさん</li>
 	</ul>
       </div>
       
