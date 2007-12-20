@@ -642,6 +642,7 @@
 	  <li>VCL(Delphi)</li>
 	  <li>Galaxy(C++)</li>
 	</ul>
+	<p>IoCやフレームワークという言葉もこの時代(のちょっと前)に生まれた</p>
 	<!-- <img class="timeline" src="img/timeline4.png"/> -->
 	<div class="notes">
 	  <p>
@@ -698,8 +699,8 @@
 	<h1>開発方法論の乱立</h1>
 	<h2>UML関係の書籍をあさると90年代初頭はまさに戦国時代</h2>
 	<ul>
-	  <li>Shlaer＆Mellor手法</li>
-	  <li>Coad＆Yourdon法</li>
+	  <li>Shlaer＆Mellor</li>
+	  <li>Coad＆Yourdon</li>
 	  <li>OOSE</li>
 	  <li>OMT</li>
 	  <li>Booch</li>
@@ -717,7 +718,7 @@
 	<ul>
 	  <li>オブジェクトやクラスの静的な構造を重視
 	    <ul>
-	      <li>Booch法,OMT法</li>
+	      <li>Booch,OMT</li>
 	      <li>UMLやMDAへの流れ</li>
 	    </ul>
 	  </li>
@@ -750,10 +751,12 @@
       	<h2>この頃からオブジェクト指向言語パラダイムを語る「言葉」が変わる</h2>
 	<ul>
 	  <li>かつてはオブジェクトとメッセージ交換が重視された</li>
-	  <li>同期呼び出しでさえ、結果をwaitして待つメッセージ送信という説明がなされた</li>
+	  <li>同期呼び出しでさえ、結果をwaitして待つメッセージ送信という説明だった</li>
 	  <li>この頃からカプセル化、ポリモーフィズム、継承、抽象化が重視されるようになった</li>
 	  <li>再利用性や部品化を強く主張する</li>
+	  <li>動的なオブジェクト指向から静的なオブジェクト指向へ主流が移る</li>
 	</ul>
+	<p>どちらにしろ、この時代の主流はDOAでウォーターフォール</p>
 	<!-- <img class="timeline" src="img/timeline4.png"/> -->
       	<div class="notes">
 	  サクサクSmalltalkとか
@@ -798,32 +801,18 @@
       
       <div class="slide">
 	<h1>日本企業でのオブジェクト指向</h1>
-	<h2>富士ゼックス、富士ゼロックス情報システム</h2>
+	<h2>富士ゼロックス、富士ゼロックス情報システム</h2>
 	<p>OO関連の人材を輩出</p>
 	<ul>
 	  <li>青木淳氏(Smalltalk)</li>
 	  <li>羽生田栄一氏(UML)</li>
 	  <li>阿部 和広氏(Squeak)</li>
 	</ul>
-	<!-- <img class="timeline" src="img/timeline5.png"/> -->
-	<div class="notes"></div>
-      </div>
 
-      <div class="slide">
-	<h1>初期のOO</h1>
-	<h2>当時のオブジェクト指向はAIの一分野</h2>
+	<h2>以下のような研究がおこなわれていた</h2>
 	<ul>
 	  <li>AI</li>
-	  <li>発想支援システム
-	    <ul>
-	      <li>マインドマップみたいなもの</li>
-	    </ul>
-	  </li>
-	  <li>当時はAI研究が盛んだった
-	    <ul>
-	      <li>第五世代コンピュータなど</li>
-	    </ul>
-	  </li>
+	  <li>発想支援システム</li>
 	</ul>
 	<!-- <img class="timeline" src="img/timeline5.png"/> -->
 	<div class="notes"></div>
@@ -834,18 +823,27 @@
 	<h2>当時最強のオブジェクト指向環境</h2>
 	<ul>
 	  <li>最初にSmalltalkを走らせたマシンがAlto</li>
-	  <li>Star は Alto の後継ハードウエア（D-マシン）に Star システム（後に ViewPoint）を載せたもの。</li>
+	  <li>Star は Alto の後継ハードウエアにStar システム（後に ViewPoint）を載せたもの。</li>
 	  <li>オブジェクト指向デスクトップ</li>
 	  <li>Smalltalk専用の環境ではなくInterlisp,Mesaなど様々な環境を動作可能</li>
 	  <li>現在のユニコードより優れたコード体系などを備えてた</li>
 	  <li>らしいです。</li>
 	</ul>
-	<!-- <img class="timeline" src="img/timeline5.png"/> -->
 	<div class="notes"></div>
       </div>
 
-      <!-- ======================================================================================== -->
+      <div class="slide">
+	<h1>この時代はAI研究の時代だった</h1>
+	<ul>
+	  <li>日本ではIPAの第5世代コンピュータプロジェクト</li>
+	  <li>Prologに注目された</li>
+	  <li>LispやSmalltalkもなぜかAI関連</li>
+	  <li>オブジェクト指向もAIの一分野と捉えられた節がある</li>
+	</ul>
+	<p>どちらにしろ、この時代のビジネスの主流はDOAでウォーターフォール</p>
+      </div>
 
+      <!-- ======================================================================================== -->
       <div class="slide">
 	<h1>Part6(70年代-80年代)</h1>
 	<h2>先史時代編 ～黎明期～</h2>
@@ -854,10 +852,9 @@
 	  <li>Part3(90年代後半)～近世:コンポーネントと開発方法論時代～ </li>
 	  <li>Part4(90年代前半)～中世:統合開発環境の時代～ </li>
 	  <li>Part5(80年代後半)～古代:AI研究時代～</font></li>
-	  <li><font style="color:red">Part6(70年代-90年代)～先史時代:オブジェクト指向誕生の次代～</font></li>
+	  <li><font style="color:red">Part6(70年代-90年代)～先史時代:オブジェクト指向誕生の時代～</font></li>
 	</ul>
       </div>
-
 
       <div class="slide">
 	<h1>Part6(70年代-80年代)</h1>
@@ -871,13 +868,14 @@
 	<h1>オブジェクト指向言語の誕生</h1>
 	<h2>Simula(1968)</h2>
 	<ul>
+	  <li>Ole-Johan Dahl、Kristen Nygaard によって開発される</li>
 	  <li>(一般的に語られている)オブジェクト指向言語の基本的な概念をそなえる</li>
 	  <li>クラス指向言語</li>
 	  <li>名前のとおり離散シミュレーションのための言語</li>
 	  <li>Simula自身はオブジェクト指向言語を名乗っていなかった</li>
 	  <li>ノルウェー産(北欧か!)</li>
 	</ul>
-	<!-- <!-- <img class="timeline" src="img/timeline6.png"/> --> -->
+	<!-- <img class="timeline" src="img/timeline6.png"/> --> 
       </div>
 
       <div class="slide">
