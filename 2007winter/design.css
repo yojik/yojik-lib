@@ -1,12 +1,22 @@
-body { background-color: rgb(255,255,255); margin-left: 1em; margin-right: 1em; }
+body {margin-left: 1em; margin-right: 1em; }
 h1 { font-size:200%; color: #000080; text-align:center;}
 h2 { font-size:160%; color: #000080; text-align:center;}
 h3 { font-size:140%; color: #000080;}
 h4 { font-size:140%; color:rgb(0,0,0); border-style: solid; border-left-width: 0.8em; border-top-width: 0.0em; border-right-width: 0.0em; border-bottom-width: 0.2em; border-color: rgb(0,0,128);  padding-left: 0.5em; }
 h5 { font-size:120%; color:rgb( 0, 0, 0); margin-left: 0.5em; color:rgb(0,0,0); border-style: solid; border-left-width: 0.1em; border-top-width: 0.0em; border-right-width: 0.0m; border-bottom-width: 0.1em; border-color: rgb(0,0,128);  padding-left: 0.5em;}
 h6 { font-size:100%; color:rgb( 0, 0, 0); margin-left: 0.5em; color:rgb(0,0,0); border-style: solid; border-left-width: 0.0em; border-top-width: 0.0em; border-right-width: 0.0em; border-bottom-width: 0.1em; border-color: rgb(0,0,128);}
-p { font-size:100%; margin-left:1em; text-indent:1.0em; margin-top:0.5em; margin-bottom:1.5em; line-height: 150% }
-blockquote { margin-top: 0em; margin-left:1em; margin-bottom: 0em; }
+
+p {font-size:100%; margin-left:1em; text-indent:1.0em; margin-top:0.5em; margin-bottom:1.5em; line-height: 150%; }
+
+blockquote {
+  padding: 8px;
+  background-color: #faebbc;
+  border-top: 1px solid #e1cc89;
+  border-bottom: 1px solid #e1cc89;
+  margin: 5px;
+  text-indent: 23px;
+}
+
 ul {
    line-height: 150%;
    text-indent: 2em;
@@ -43,11 +53,3 @@ a.index:hover {
     background-color: #ffd0a0;
 }
 
-blockquote {
-　　margin: 5px 5px 15px 20px; 
-　　padding: 5px 5px 5px 20px;
-　　background-color:#F0F8FF;
-　　border: 1px 1px 1px 1px;
-　　border-color: #29669F;　
-　　border-style:dotted;　　
-}
