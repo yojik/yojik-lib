@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="sample_anti_oo" default="help" basedir=".">
+   <!-- 
+    Project Properties 
+    -->
+   <property file="build.properties"/>
+   <property name="app.name" value="amazonchecker"/>
+   <property name="app.version"  value="0.000001"/>
+   <property name="app.vender"  value="oo-square"/>
+
+   
+   <!-- dirs -->
+   <property name="dir.deploy" location="deploy"/> 
+   <property name="dir.build" location="build"/> 
+   <property name="dir.classes" location="${dir.build}/classes"/> 
+   <property name="dir.lib" location="lib"/> 
+   <property name="dir.src" location="src"/>   
+   <property name="dir.target" location="target"/>   
+
+   
+   <!-- libs -->
+   <property name="jar.slf4j"             value="slf4j-api-1.5.0.jar"/>
+   <property name="jar.jcl104-over-slf4j" value ="jcl104-over-slf4j-1.5.0.jar"/>
+   <property name="jar.logback-classic"   value ="logback-classic-0.9.9.jar"/>
+   <property name="jar.logback-core"      value ="logback-core-0.9.9.jar"/>     
+   <property name="jar.httpclient"        value="commons-httpclient-3.0.jar"/>
+   <property name="jar.commons-lang"      value="commons-lang-2.1.jar"/>
+   <property name="jar.commons-codec"     value="commons-codec-1.2.jar"/>
+
+      
+   
+   <!-- classpath -->
+   <fileset  id="jars.compile" dir="lib">
+     <include name="${jar.httpclient}" />
+   </fileset>
+   <fileset  id="jars.runtime" dir="lib">
+     <include name="${jar.httpclient}" />
+     <include name="${jar.slf4j}"/>
+     <include name="${jar.jcl104-over-slf4j}"/>
+     <include name="${jar.logback-classic}"/>
+     <include name="${jar.logback-core}"/>
+     <include name="${jar.commons-lang}"/>
+     <include name="${jar.commons-codec}" />
+   </fileset>
+   
+   <path id="classpath.compile">
+     <fileset refid="jars.compile"/>
+   </path>
+   <path id="classpath.runtime">
+     <fileset refid="jars.runtime"/>
+   </path>
+   
+   <!-- classpath for manifest -->
+   <pathconvert pathsep=" " dirsep="/" property="mf.classpath.runtime" refid="classpath.runtime">
+     <map from="${basedir}"  to="."/>
+   </pathconvert>
+  
+   
+   <target name="compile" description="compile Java source">
+     <delete dir="${dir.classes}"/>
+     <mkdir dir="${dir.classes}"/>
+     <javac srcdir="${dir.src}" 
+             includeAntRuntime="no"
+             destdir="${dir.classes}" 
+             debug="true"
+             encoding="UTF-8"
+             source="1.6">
+       <classpath refid="classpath.compile"/>
+      </javac> 
+   </target>
+
+   <target name="jar" description="compile Java source" depends="compile">  
+     <jar file="${dir.build}/${app.name}.jar">
+       <fileset dir="${dir.src}"> 
+	 <include name="**/*"/>
+      	 <exclude name="**/.svn/*"/>	   
+       </fileset>  
+       <fileset dir="${dir.classes}"> 
+	 <include name="**/*"/>
+	 <exclude name="**/.svn/*"/>	   
+       </fileset>
+       <manifest>
+	 <attribute name="Main-Class" value="amazoncheck.Main"/>
+	   <attribute name="Class-Path" value="${mf.classpath.runtime}"/>
+	   <attribute name="Implementation-Title"   value="${app.name}"/>
+	   <attribute name="Implementation-Version" value="${app.version}"/>
+	   <attribute name="Implementation-Vendor"  value="${app.vendor}"/>
+       </manifest>
+     </jar>
+   </target>   
+
+   
+   <target name="deploy" description="deploy" depends="jar">
+     <delete dir="${dir.target}"/>
+     <mkdir dir="${dir.target}"/>
+     <copy todir="${dir.target}">
+       <fileset file="${dir.build}/${app.name}.jar"/>
+     </copy>
+     <copy todir="${dir.target}/lib">
+       <fileset refid="jars.runtime"/>
+     </copy>     
+   </target>   
+   
+   <target name="testrun" description="test code" depends="deploy">
+     <echo message="「コードで学ぶアジャイル開発」でテストします..."/>
+     <java 
+       fork="true"
+       jar="${dir.target}/${app.name}.jar">
+       <arg value="4756142885"/>
+     </java>
+     <echo message="中古価格が安すぎる!"/>
+   </target>
+   
+   <target name="clean" description="clean ${dir.target} and ${dir.build}" >
+     <delete dir="${dir.target}"/>
+     <delete dir="${dir.build}"/>
+   </target>
+
+   <target name="print" description="print エクササイズ">
+     <echo><![CDATA[
+       1. 一つのメソッドにつきインデントは1段階までにすること
+       2.elseを使わないこと
+       3.すべてのプリミティブ型と文字列型をラップすること
+       4.一行につきドットは一つまでにすること
+       5.名前を省略しないこと
+       6.すべてのエンティティを小さくすること
+       7.一つのクラスにつきインスタンスは二つまでにすること
+       8.ファーストクラスコレクションを利用する
+       9.getter,setterプロパティを利用しないこと
+     ]]></echo>
+     
+     
+   </target>
+
+   <target name="help" description="display the Help message">
+      <echo message="Quick Start web application"/>
+      <echo message="==========================="/> 
+      <echo/>  
+      <echo message="Main targets:"/> 
+      <echo/>    
+      <echo message="compile               compile Java code"/>
+      <echo message="jar                   archive class code"/>
+      <echo message="deploy                copy jar file to target directory"/>
+      <echo message="help                  display the Help message"/>  
+      <echo/>
+      <echo/>
+      <echo message="Please ensure you have configured build.properties"/> 
+      <echo/>  
+   </target>  	   
+</project>
