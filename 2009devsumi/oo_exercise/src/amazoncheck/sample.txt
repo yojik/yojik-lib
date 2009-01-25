@@ -1,0 +1,42 @@
+1.Map/DTO
+Book:
+  Map represent() {
+    return {"title"=>titile.name "money"=>offerSummry.price}
+  }
+}
+View: 
+  m = book.represent()
+  print m["title"]
+
+2.プラガブルView
+Viewが要求するインタフェースをBookに持たせる
+佐藤さんのtoString()を含む。
+VC <-> M 
+
+3.ダブルディスパッチパターン(エキササイズのテーマにそった)
+フォーマット用
+山内くんのバージョンがVisitor
+ formatTitle 
+ formatMoney
+
+4.おとしどころ
+  佐藤さん
+  getter setter を定義しちゃダメということは無い
+  そもそも。。。
+
+5.発表資料
+結果よりは、途中
+意外にUML使う(最初と最後の奴をどんと出して、注目を絞っていく)
+シーン1:
+  DownloadLogic -> AmazonWebService + WebResource + BookCreator
+  「名前」と「Entity小さく」
+シーン2:
+  Bookの分解
+シーン3:
+  Getterの排除(言い訳込み)
+まとめ: 
+
+6.コンセプトを明確に
+  - アジェンダを作る
+  - まとめ(知見)
+
