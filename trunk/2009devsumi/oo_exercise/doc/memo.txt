@@ -119,6 +119,8 @@ ModelがViewの知識をある程度持っているということでGUIには�
 
 ** Chapter05:まとめ
 考え中。。。
+各種反論への回答とか。。
+
 
 * 各種データ:  
 http://d.hatena.ne.jp/katzchang/20080731/p1
