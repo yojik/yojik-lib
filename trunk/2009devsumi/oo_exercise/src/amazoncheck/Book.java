@@ -15,13 +15,13 @@ public class Book {
         this.offerSummary = new OfferSummary(price,usedPrice);
     }
     public void format(Out<String> out) {
-        out.put("タイトル",title);
+        out.put("タイトル",title());
         out.put("価格",     price());
         out.put("中古価格", usedPrice());
     }
 
     public BookDTO represent() {
-        return new BookDTO(title,price(),usedPrice());
+        return new BookDTO(title(),price(),usedPrice());
     }
 
     private String title() {
