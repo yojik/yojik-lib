@@ -11,7 +11,7 @@ public class Main {
             AmazonWebService aws = new AmazonWebService();
             Book book = aws.readBookInfo(args[0]);
             BookDTO dto = book.represent();
-            System.out.println(dto);
+            //System.out.println(dto);
             book.format(new ConsoleOut());
         } catch (Exception e) {
             e.printStackTrace();
