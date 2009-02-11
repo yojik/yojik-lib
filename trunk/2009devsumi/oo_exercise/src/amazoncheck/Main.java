@@ -7,17 +7,12 @@ package amazoncheck;
 public class Main {
     public static void main(String[] args) {
         try {
-            if(args.length!=0) {
-                AmazonWebService aws = new AmazonWebService();
-                Book ret = aws.readBookInfo(args[0]);
-                //getter の 排除が必要
-                //あとでパラメタライズドにする必要あり
-                ret.accept(new AttributeListFormatter<String>() {
-                    public void format(String attr, String value) {
-                        System.out.printf("%s %s \n" , attr, value);
-                    }
-                });                 
-            }
+            if(args.length < 1) return ;
+            AmazonWebService aws = new AmazonWebService();
+            Book book = aws.readBookInfo(args[0]);
+            BookDTO dto = book.represent();
+            System.out.println(dto);
+            book.format(new ConsoleOut());
         } catch (Exception e) {
             e.printStackTrace();
             System.exit(1);

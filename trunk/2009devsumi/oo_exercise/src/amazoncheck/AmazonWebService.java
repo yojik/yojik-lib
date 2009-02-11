@@ -16,14 +16,14 @@ public class  AmazonWebService {
     
     private static final String AWS_URL             = "http://ecs.amazonaws.jp/onca/xml";
     private static final String AWS_PARAMS_TEMPLATE = "?Service=AWSECommerceService"
-    + "&AWSAccessKeyId=041WR28EQVEF1112J6G2"
+    + "&AWSAccessKeyId=04F7763B13CKDQ2QS8R2"
     + "&Operation=ItemLookup"
     + "&ItemId=%s"
     + "&Condition=All"
     + "&MerchantId=All"
     + "&ResponseGroup=Offers,Small";
 
-    private BookCreater  bookCreater = new BookCreater();
+    private BookCreater bookCreater = new BookCreater();
     public Book readBookInfo(String asin) throws Exception {
         //URLとかがカプセル化されてない or webResourceにURLを
         //RESTクライアント系のライブラリとかを参考にする
