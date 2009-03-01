@@ -68,75 +68,64 @@
         <td align="right" valign="top"><strong>{config.number}</strong></td>
     </tr>
     </table>
-
-    <p><font size="+1">{config.title}</font></p>
-
     <!-- ここまでヘッダ -->
     <h1 align="center">{config.title}</h1>
     <h3 align="center">
-        <em class="title">{config.subtitle}</em></h3>
-    <p>
-      {config.desc}
-    </p>
+      <em class="title">{config.subtitle}</em></h3>
     <hr>
     <!-- 本文開始 -->
     {wiki2html('wiki.txt')}
-
     
     <hr />
     <!-- 記事アンケート -->
     <br>
     <br>
     <form action="/cgi-bin/otc/hiroba/kiji_anquete/kiji_anquete.cgi" method="post">
-        <!-- 記事のタイトルを "value" に入力してください -->
-        <input value="{config.title}" name="title" type="hidden">
-        <!-- 記事の URL を "value" に入力してください  -->
+      <!-- 記事のタイトルを "value" に入力してください -->
+      <input value="{config.title}" name="title" type="hidden">
+      <!-- 記事の URL を "value" に入力してください  -->
 
-        <input value="{config.url}"
-            name="url" type="hidden">
-        <table align="center" bgcolor="#333333" border="0" cellpadding="1" cellspacing="0">
-            <tbody>
-                <tr>
-                    <td>
-                        <table bgcolor="#eeeeee" border="0" cellpadding="5" cellspacing="0" width="100%">
-                            <tbody>
-                                <tr>
-                                    <td align="center" bgcolor="#eeeeee">
+      <input value="{config.url}"
+	name="url" type="hidden">
+      <table align="center" bgcolor="#333333" border="0" cellpadding="1" cellspacing="0">
+	<tbody>
+	  <tr>
+	    <td>
+	      <table bgcolor="#eeeeee" border="0" cellpadding="5" cellspacing="0" width="100%">
+		<tbody>
+		  <tr>
+		    <td align="center" bgcolor="#eeeeee">
+		      <font class="txt">記事の内容を 5 点満点で評価してください。<br></font>
+		      <div style="white-space: nowrap;">
+			<font class="score">
+			  <input value="1" name="mark" type="radio">1 点
+			  <input value="2" name="mrk" type="radio">2 点
+			  <input checked="checked" value="3" name="mark" type="radio">3 点
+			  <input value="4" name="mark" type="radio">4 点
+			  <input value="5" name="mark" type="radio">5 点</font></div>
+		    </td>
+		  </tr>
+		  <tr>
+		    <td align="center" bgcolor="#eeeeee">
+		      <div style="white-space: nowrap;">
+			<font class="txt">記事に関するコメントがあれば併せてご記入ください。<br>
+			</font>
+		      </div>
+		      <textarea name="text" rows="3" cols="40"></textarea></td>
 
-                                        <font class="txt">記事の内容を 5 点満点で評価してください。<br>
-                                        </font>
-                                        <div style="white-space: nowrap;">
-                                            <font class="score">
-                                                <input value="1" name="mark" type="radio">1 点
-                                                <input value="2" name="mrk" type="radio">2 点
-                                                <input checked="checked" value="3" name="mark" type="radio">3 点
-                                                <input value="4" name="mark" type="radio">4 点
-                                                <input value="5" name="mark" type="radio">5 点</font></div>
-                                    </td>
-
-                                </tr>
-                                <tr>
-                                    <td align="center" bgcolor="#eeeeee">
-                                        <div style="white-space: nowrap;">
-                                            <font class="txt">記事に関するコメントがあれば併せてご記入ください。<br>
-                                            </font>
-                                        </div>
-                                        <textarea name="text" rows="3" cols="40"></textarea></td>
-
-                                </tr>
-                                <tr>
-                                    <td align="center" bgcolor="#eeeeee">
-                                        <font class="txt">
-                                            <input value=" 送信 " type="submit">
-                                            <input value=" 削除 " type="reset"></font></td>
-                                </tr>
-                            </tbody>
-                        </table>
-
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+		  </tr>
+		  <tr>
+		    <td align="center" bgcolor="#eeeeee">
+		      <font class="txt">
+			<input value=" 送信 " type="submit">
+			<input value=" 削除 " type="reset"></font></td>
+		  </tr>
+		</tbody>
+	      </table>
+	    </td>
+	  </tr>
+	</tbody>
+      </table>
     </form>
     <br>
     <br>
