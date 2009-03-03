@@ -7,5 +7,6 @@ config = {
  number: '[2008 年 3 月号]',
  title :'Developers Summit 参加報告',
  subtitle :'オブジェクト指向エクササイズのススメ',
- url: 'xxx.xxx.xxx',
+ author:'菅野 洋史 (yojik)',
+ url: 'http://www.ogis-ri.co.jp/otc/hiroba/Report/Developers_Summit2009/',
 }
