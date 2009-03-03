@@ -1,0 +1,191 @@
+body {
+  color: black;
+  background-color: white;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+h1 {
+  color: #000080;
+  text-align: center;
+}
+h1.subtitle {
+  font-size: 110%;
+}
+h2 {
+  margin: 3em 1em 0.5em 1em;
+  padding-left: 0.5em;
+  border-style: solid;
+  border-width: 0.0em 0.0em 0.1em 1.0em;
+  border-color: #000080;
+}
+h3 {
+  margin: 2em 1em 0.5em 3em;
+  padding-left: 0.5em;
+  font-weight: bold;
+  border-width: 0em 0em 0.1em 0.2em;
+  border-style: solid;
+  border-color: #000080;
+  color: #000080;
+  font-size: 120%;
+}
+h3.reference
+{
+  border-style: dotted;
+  border-width: 0em 0em thin 0em;
+  border-color: gray;
+}
+h4 {
+  margin: 1.0em 1.0em 0.5em 3.5em;
+  padding: 0em 0em 0em 0.5em;
+  border-width: 0em 0em 0.1em 0em;
+  border-style: solid;
+  border-color: #000080;
+  color: #000080;
+}
+h4.reference
+{
+  border-style: dotted;
+  border-width: 0em 0em thin 0em;
+  border-color: gray;
+}
+h5 {
+  margin: 1.0em 1.0em 0.5em 4.0em;
+  font-size: 100%;
+}
+p {
+  margin-left: 3.5em;
+  margin-right: 1.5em;
+  line-height: 130%;
+}
+strong {
+  color: #ff1111;
+}
+em {
+  color: #ff1111;
+}
+div.lecturer {
+  margin-left: 3.5em;
+  margin-right: 3.5em;
+  padding: 0.2em;
+  line-height: 125%;
+  background-color: #eeeeee;
+}
+div.annotation {
+  font-size: 90%;
+  color: #707070;
+}
+div.annotation p {
+  margin: 0.0em 1.5em 0.0em 5.0em;
+  font-style: italic;
+}
+ul {
+  margin: 1.0em 4.5em 1.0em 4.5em;
+  padding: 0.5em 1.0em 0.5em 1.0em;
+  line-height: 130%;
+}
+dl {
+  margin: 1.0em 4.5em 1.0em 4.5em;
+  padding: 0.5em 1.0em 0.5em 1.0em;
+  line-height: 130%;
+}
+ol {
+  margin: 0.0em 0.5em 0.0em 4.5em;
+  padding: 0.5em 1.0em 0.5em 1.0em;
+  line-height: 130%;
+}
+ul li, ol li {
+  }
+ul li ul {
+  margin: 0.0em 4.5em 0.0em 0.5em;
+  padding: 0.0em 1.0em 0.0em 1.0em;
+}
+ul li ul li {
+  margin-left: 1em;
+  margin-right: 1em;
+}
+ul.bordered {
+  border-style: dotted;
+  border-width: thin;
+  border-color: gray;
+  background-color: #ccccff;
+}
+ul.bordered li {
+  margin-left: 0.5em;
+}
+ul.reference {
+  font-size: 90%;
+}
+div.navi {
+  text-align: right;
+  margin-top: 0em;
+  margin-bottom: 0em;
+}
+div.date {
+  text-align: right;
+  margin-right: 2em;
+}
+div.author {
+  text-align: right;
+  margin-right: 2em;
+}
+div.linktotop {
+  text-align: right;
+  margin-right: 2em;
+  font-size: 80%;
+}    
+table.body {
+  margin-left: 2em;
+  margin-right: 2em;
+}
+div.image {
+  text-align: center;
+}
+img {
+  }
+div.image div.caption {
+  font-size: 90%;
+}
+img.right {
+  margin: 1.0em 2.0em 2.0em 2.0em;
+  float: right;
+}
+a:link {
+  color: #000080;
+  text-decoration: none
+;
+}
+a:visited {
+  text-decoration: none ;
+}
+a:active {
+  text-decoration: underline ;
+}
+/* a:focus {
+  text-decoration: underline }
+*/
+/* a:hover {
+  text-decoration: underline }
+*/
+
+#reference
+{
+  border-style: dotted;
+  border-width: 0em 0em thin 0em;
+  border-color: gray;
+}
+.case {
+  margin: 1.0em 4.5em 1.0em 4.5em;
+  padding: 0.5em 1.0em 0.5em 1.0em;
+  background-color: #F8F8FF;
+  border: thin solid #D3D3D3;
+}
+h5.item {
+  margin-left:  0em;
+  margin-right: 0em;
+  line-height: 100%;
+}
+p.item {
+  margin-left:  2em;
+  margin-right: 2em;
+  line-height: 100%;
+}
