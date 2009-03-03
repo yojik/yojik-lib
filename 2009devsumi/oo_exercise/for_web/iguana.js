@@ -5,7 +5,7 @@ function replaceAndEval(str) {
 }
 function save(text) {
  try {
-  var fw = new java.io.FileWriter("result.html")
+  var fw = new java.io.FileWriter("index.html")
   fw.write(result);
   fw.flush()
  } catch (e) {
