@@ -5,61 +5,7 @@
     <title>Developers Summit 参加報告</title>
     <meta http-equiv="Content-Language" content="ja">
     <meta http-equiv="Content-Type" content="text/html; charset=shift_jis">
-    <style type="text/css">
-            em {
-                color:#808080;
-            }
-
-            em.title {
-                color:#000000;
-            }
-
-            h1.title {
-                 font-size:120%;
-                 font-weight:normal;
-            }
-
-            h2 {
-                font-size:120%;
-                font-weight:bold;
-            }
-
-            h3 {
-                color:#2D4488;
-                margin-top: 2.5em;
-            }
-
-            h4 {
-                color:#0033CC;
-                margin-left: 10px;
-            }
-
-            h5 {
-                color:#738FE6;
-                margin-left: 20px;
-            }
-
-            p {
-                margin-left: 0px;
-                line-height: 1.2em;
-                text-indent: 1em;
-            }
-
-            .comment {
-                margin-left: 20px;
-                font-size: smaller
-                color : #8E8E8D;
-            }
-
-            .book {
-                color : #8E8E8D;
-                font-style: italic;
-                margin-left: 30px;
-            }
-            i {
-                margin-left: 20px;
-            }
-    </style>
+    <link rel="stylesheet" type="text/css" href="report.css"> 
 </head>
 <body alink="#ff8000" bgcolor="#ffffff" link="#000080" vlink="#000080">
     <table summary="ヘッダ" border="0" cellpadding="2" cellspacing="0" width="100%" id="HeaderTable">
@@ -69,61 +15,63 @@
     </tr>
     </table>
     <!-- ここまでヘッダ -->
-    <h1 align="center">Developers Summit 参加報告</h1>
-    <h3 align="center">
-      <em class="title">オブジェクト指向エクササイズのススメ</em></h3>
+    <h1>Developers Summit 参加報告<br />
+      <span style="font-size: 70%">～オブジェクト指向エクササイズのススメ～</span><br /> 
+    </h1>
+    <center> 
+      株式会社オージス総研<br /> 
+      菅野 洋史 (yojik)
+    </center> 
     <hr>
     <!-- 本文開始 -->
     <div class="section">
 	<h3><a href="#p1" name="p1"><span class="sanchor">■</span></a>  はじめに </h3>
-	<p>先日、目黒雅叙園にて開催された<a href="http://codezine.jp/devsumi/2009/">Developers Summit</a>。私たちオブジェクトの広場も第一日目の開発プロセストラックの枠で「オブジェクト指向エクササイズのススメ」というタイトルで講演をさせていただきました。</p>
+	<p>先日、目黒雅叙園にて開催された<a href="http://codezine.jp/devsumi/2009/">Developers Summit</a>。私たちオブジェクトの広場も第一日目の開発プロセストラックの枠で「オブジェクト指向エクササイズのススメ」という講演をさせていただきました。</p>
 	
 	<h3><a href="#p2" name="p2"><span class="sanchor">■</span></a>  タイムテーブルに載った内容</h3>
 	
-	<p><i>制約と誓約、ある能力を高めるためには、この二つの制限が必要だといわれます。自分の人生をオブジェクト指向に捧げると誓約したエンジニアのために、オブジェクト指向の能力を高めるための制約「オブジェクト指向エクササイズ<span class="footnote"><a href="#f1" title="「オブジェクト指向エクササイズ」は先日出版された「ThoughtWorksアンソロジー」中の一編です。ThoughtWorksアンソロジーは、マーチン・ファウラー率いるThoughtWorks社の技術者によるアジャイルとオブジェクト指向に関する珠玉のエッセイ集です。 
-	" name="fn1">*1</a></span>」を紹介します。 </i></p>
-	
+	<p><i>制約と誓約、ある能力を高めるためには、この二つの制限が必要だといわれます。自分の人生をオブジェクト指向に捧げると誓約したエンジニアのために、オブジェクト指向の能力を高めるための制約「オブジェクト指向エクササイズ」を紹介します。 </i></p>
 	<p>これはもちろん「ハンター×ハンター」の<a href="http://ja.wikipedia.org/wiki/HUNTER×HUNTER#.E5.88.B6.E7.B4.84.E3.81.A8.E8.AA.93.E7.B4.84">「制約と誓約」</a>のことです。ある種のルールを遵守することによって、能力向上をするというものです。ルールは厳しく不自由なものほど、より爆発的な能力向上が可能になるという設定です。</p>
+	<p>この「オブジェクト指向エクササイズ」は先日出版された「ThoughtWorksアンソロジー」中の一編です。ThoughtWorksアンソロジーは、マーチン・ファウラー率いるThoughtWorks社の技術者によるアジャイルとオブジェクト指向に関する珠玉のエッセイ集です。</p>
 	
 	<h3><a href="#p3" name="p3"><span class="sanchor">■</span></a>  主題</h3>
-	<p>というタイムテーブルはともかく、私たちが設定した主題は以下の二つです</p>
+	<p>そんな概要はともかく、私たちが設定した主題は以下の二つです</p>
 	
-	<h4> エクササイズによってコーディングと設計の面白さをつたえる</h4>
-	<p>エクササイズの制約を守るだけでコードと設計がどんどん変化していく様子を実況します。それによって、オブジェクト指向プログラミングや設計の妙味を伝えることができればよいな、と思いました。</p>
+	<h4> エクササイズがオブジェクト指向設計の教育に有効なことをプレゼンする</h4>
+	<p>エクササイズの制約を守ってコードを変形させていくだけで、設計がどんどん改善されていく様子を実況します。それによって、エクササイズの効用を説明しつつ、オブジェクト指向設計の面白さを伝えることを目指しました。</p>
 	
 	<h4>  (裏テーマ)オブジェクト指向設計の復権/再発見</h4>
-	<p>これは、「開発プロセストラック」の一員として意識したことです。どんな開発プロセストラックも技術的な裏づけが無いと意味がありません。特にアジャイル開発プロセスはSmalltalkコミュニティやオブジェクト指向分析設計の流れの中から生まれたものです。<a href="http://www.infoq.com/jp/news/2008/11/decline-of-agile">その基盤を失ったプロジェクトが上手くいくわけがありません</a>。</p>
-	<p>現在は特定のアーキテクチャや言語に依存した設計に関する議論は盛んですが、オブジェクト指向設計そのものに関する議論は下火になっています。しかし再び注目すべき時期になっているのでは無いでしょうか。</p>
+	<p>これは、「開発プロセストラック」の一員として意識したことです。どんな開発プロセスも技術的な裏づけが無いと意味がありません。特にアジャイル開発プロセスはSmalltalkコミュニティやオブジェクト指向分析設計の流れの中から生まれたものです。<a href="http://www.infoq.com/jp/news/2008/11/decline-of-agile">その基盤を失ったプロジェクトが上手くいくわけがありません</a>。</p>
+	<p>最近まで特定のアーキテクチャや言語に依存した議論は盛んですが、オブジェクト指向設計そのものに関する議論は下火でした。しかし再び注目すべき時期になっているのでは無いでしょうか</p>
 	
-	<h3><a href="#p4" name="p4"><span class="sanchor">■</span></a>  プレゼンの流れ</h3>
-	<h4> 冒頭:yojikパート</h4>
-	<p>「みんなオブジェクト指向わかってんの?」というフックを仕掛けました。</p>
-	<ul>
-		<li> 実際の開発でオブジェクト指向設計を貫くのは難しい </li>
-		<li> そもそも実践が足りていない</li>
-		<li> なんで皆ぶっつけ本番でやるの?</li>
-		<li> そこでオブジェクト指向エキササイズですよ</li>
-	</ul>
+	<h4> (裏テーマ2) ThoughtWorksアンソロジーの販促</h4>
+	<p>いわずもがなですね。</p>
+	<p><a href="http://www.amazon.co.jp/dp/487311389X"><img src="http://ec2.images-amazon.com/images/I/51FOBZPjz-L._SL500_AA240_.jpg" alt="ThoughtWorksアンソロジー ―アジャイルとオブジェクト指向によるソフトウェアイノベーション" width="145" height="140" /></a></p>
+	<p>このエッセイ以外にも様々な興味深いトピックを扱ってます。</p>
 	
-	<h4> 途中:大村パート</h4>
-	<ul>
-		<li> 9つの制約をひたすら説明するパート</li>
-	</ul>
-	
-	<h4> 実際の適応例</h4>
-	<p>Amazonマーケットプレイスの価格調査ツールを例題の設計改善のプロセスを説明していきます。</p>
-	
+	<h3><a href="#p4" name="p4"><span class="sanchor">■</span></a>  スライド</h3>
+	<p>以下が本編スライドです。40分の講演に85枚のスライドというハイペースなものになりました。1枚30秒前後、高橋メソッドと一般的なプレゼンの中間ぐらいのペースですね。</p>
+	<p><div style="width:425px;text-align:left" id="__ss_1033616"></p>
+	<p>  <a style="font:14px Helvetica,Arial,Sans-serif;display:block;margin:12px 0 3px 0;text-decoration:underline;" href="http://www.slideshare.net/yojik/ss-1033616?type=powerpoint" title="オブジェクト指向エクササイズのススメ">オブジェクト指向エクササイズのススメ</a></p>
+	<p>  <object style="margin:0px" width="425" height="355"><param name="movie" value="http://static.slideshare.net/swf/ssplayer2.swf?doc=devsum-1234793272214386-2&stripped_title=ss-1033616" /><param name="allowFullScreen" value="true"/><param name="allowScriptAccess" value="always"/><embed src="http://static.slideshare.net/swf/ssplayer2.swf?doc=devsum-1234793272214386-2&stripped_title=ss-1033616" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="425" height="355"></embed></object></p>
+	<p></div></p>
+	<p>スライドに利用したフォントとOpenOffice用テンプレートは以下の通りです。今回はエクササイズということで学校の授業風の外見を目指したのですが、このフォントとテンプレートのおかげでイメージどおりになりました。</p>
+	<h4> フォント: Y.OzFont</h4>
+	<p>字が上手い人が書いたような綺麗な手書きペン字フォントです。使用には特にライセンス要件無しです。</p>
+	<p><a href="http://yozvox.web.infoseek.co.jp/">http://yozvox.web.infoseek.co.jp/</a></p>
+	<h4> テーマ: Chalkboard</h4>
+	<p>黒板風のかわいいテンプレート。OpenOfficeテンプレートの中でも一番人気らしいです。</p>
+	<p><a href="http://www.opentemplate.org/content/show.php/Chalkboard+Presentation?content=31393">http://www.opentemplate.org/content/show.php/Chalkboard+Presentation?content=31393</a></p>
+	<p>このテンプレートは字を書くところが限られているので、逆に1ページあたりの内容を吟味して書けた気がします。</p>
 	<h3><a href="#p5" name="p5"><span class="sanchor">■</span></a>  サンプルについて</h3>
-	<p>(サンプルコードはあとでダウンロードできます)</p>
-	<p>広場の有志でエクササイズの適用を行ってみましたが、様々な「回答」が得られました。この多様性はエクササイズの弱点でもあります。当然のことですが、エクササイズを守っただけで良い設計が得られるとは限らないのです。特に経験が少ない人は過剰設計に走ってしまう傾向があると思いました。設計上の制約をどのように満足させるかという点にセンスや経験が必要で、そこをより上手く伝える方法が必要です。</p>
+	<p>今回はAmazonマーケットプレイスの価格調査ツールを例題にエクササイズの適用例を示しました。(サンプルコードはあとでダウンロードできます)</p>
+	<p>実際にプレゼン資料を作る前に広場の有志でこの例題のエクササイズをやってみました。エクサイズの制約はやはりキツいので、私たち自身にとっても勉強になりました。</p>
+	<p>エクササイズの結果として様々な「解答」が得られましたが、実はこの多様性はエクササイズの弱点でもあります。当然のことですが、エクササイズを守っただけで良い設計が得られるとは限らないのです。特に経験が少ない人は過剰設計に走ってしまう傾向があります。設計上の制約をどのように満足させるかという点にはセンスや経験が必要で、それをより上手く伝える方法が必要だと思いました。</p>
+	<p>今回の演習の「最終解答」がいいものか悪いものか判断付かない状態でしょう。ツールに対する要求を追加してこの設計を試す必要があります。</p>
 	
-	<p>まだ最終的な「回答」がいいものか悪いものかはまだ判断付かない状態です。要求を追加して、設計を試す必要があるようです。</p>
+	<h3><a href="#p6" name="p6"><span class="sanchor">■</span></a>  まとめ</h3>
+	<p>この Developers Summit 、私個人としては講演者としても聴講者としても初めての経験でした。個人的には開発プロセスやテスト関連の講演を聴講しました。この華やかで自由な感じは、ソフトウェアデベロッパーにとってのロックフェスという趣です。来年も是非開催されるとうれしいですね。</p>
 </div>
-<div class="footnote">
-	<p class="footnote"><a href="#fn1" name="f1">*1</a>: 「オブジェクト指向エクササイズ」は先日出版された「ThoughtWorksアンソロジー」中の一編です。ThoughtWorksアンソロジーは、マーチン・ファウラー率いるThoughtWorks社の技術者によるアジャイルとオブジェクト指向に関する珠玉のエッセイ集です。 </p>
-	<p></p>
-</div>
-
     
     <hr />
     <!-- 記事アンケート -->
@@ -134,7 +82,7 @@
       <input value="Developers Summit 参加報告" name="title" type="hidden">
       <!-- 記事の URL を "value" に入力してください  -->
 
-      <input value="xxx.xxx.xxx"
+      <input value="http://www.ogis-ri.co.jp/otc/hiroba/Report/Developers_Summit2009/"
 	name="url" type="hidden">
       <table align="center" bgcolor="#333333" border="0" cellpadding="1" cellspacing="0">
 	<tbody>
