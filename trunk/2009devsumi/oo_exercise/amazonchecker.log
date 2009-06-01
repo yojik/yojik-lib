@@ -1080,3 +1080,429 @@ DEBUG 2009-02-11 23:39:21 [a.c.h.HttpMethodBase.getResponseBody:679] Buffering r
 DEBUG 2009-02-11 23:39:21 [HttpMethodBase.shouldCloseConnection:921] Resorting to protocol version default close connection policy
 DEBUG 2009-02-11 23:39:21 [HttpMethodBase.shouldCloseConnection:925] Should NOT close connection, using HTTP/1.1
 DEBUG 2009-02-11 23:39:21 [.h.HttpConnection.releaseConnection:1177] Releasing connection back to connection manager.
+DEBUG 2009-02-12 12:19:50 [c.h.p.DefaultHttpParams.setParameter:150] Set parameter http.useragent = Jakarta Commons-HttpClient/3.0
+DEBUG 2009-02-12 12:19:50 [c.h.p.DefaultHttpParams.setParameter:150] Set parameter http.protocol.version = HTTP/1.1
+DEBUG 2009-02-12 12:19:50 [c.h.p.DefaultHttpParams.setParameter:150] Set parameter http.connection-manager.class = class org.apache.commons.httpclient.SimpleHttpConnectionManager
+DEBUG 2009-02-12 12:19:50 [c.h.p.DefaultHttpParams.setParameter:150] Set parameter http.protocol.cookie-policy = rfc2109
+DEBUG 2009-02-12 12:19:50 [c.h.p.DefaultHttpParams.setParameter:150] Set parameter http.protocol.element-charset = US-ASCII
+DEBUG 2009-02-12 12:19:50 [c.h.p.DefaultHttpParams.setParameter:150] Set parameter http.protocol.content-charset = ISO-8859-1
+DEBUG 2009-02-12 12:19:50 [c.h.p.DefaultHttpParams.setParameter:150] Set parameter http.method.retry-handler = org.apache.commons.httpclient.DefaultHttpMethodRetryHandler@1430b5c
+DEBUG 2009-02-12 12:19:50 [c.h.p.DefaultHttpParams.setParameter:150] Set parameter http.dateparser.patterns = [EEE, dd MMM yyyy HH:mm:ss zzz, EEEE, dd-MMM-yy HH:mm:ss zzz, EEE MMM d HH:mm:ss yyyy, EEE, dd-MMM-yyyy HH:mm:ss z, EEE, dd-MMM-yyyy HH-mm-ss z, EEE, dd MMM yy HH:mm:ss z, EEE dd-MMM-yyyy HH:mm:ss z, EEE dd MMM yyyy HH:mm:ss z, EEE dd-MMM-yyyy HH-mm-ss z, EEE dd-MMM-yy HH:mm:ss z, EEE dd MMM yy HH:mm:ss z, EEE,dd-MMM-yy HH:mm:ss z, EEE,dd-MMM-yyyy HH:mm:ss z, EEE, dd-MM-yyyy HH:mm:ss z]
+DEBUG 2009-02-12 12:19:50 [o.a.c.httpclient.HttpClient.<clinit>: 71] Java version: 1.6.0_11
+DEBUG 2009-02-12 12:19:50 [o.a.c.httpclient.HttpClient.<clinit>: 72] Java vendor: Sun Microsystems Inc.
+DEBUG 2009-02-12 12:19:50 [o.a.c.httpclient.HttpClient.<clinit>: 73] Java class path: target/amazonchecker.jar
+DEBUG 2009-02-12 12:19:50 [o.a.c.httpclient.HttpClient.<clinit>: 74] Operating system name: Windows XP
+DEBUG 2009-02-12 12:19:50 [o.a.c.httpclient.HttpClient.<clinit>: 75] Operating system architecture: x86
+DEBUG 2009-02-12 12:19:50 [o.a.c.httpclient.HttpClient.<clinit>: 76] Operating system version: 5.1
+DEBUG 2009-02-12 12:19:52 [o.a.c.httpclient.HttpClient.<clinit>: 81] SUN 1.6: SUN (DSA key/parameter generation; DSA signing; SHA-1, MD5 digests; SecureRandom; X.509 certificates; JKS keystore; PKIX CertPathValidator; PKIX CertPathBuilder; LDAP, Collection CertStores, JavaPolicy Policy; JavaLoginConfig Configuration)
+DEBUG 2009-02-12 12:19:52 [o.a.c.httpclient.HttpClient.<clinit>: 81] SunRsaSign 1.5: Sun RSA signature provider
+DEBUG 2009-02-12 12:19:52 [o.a.c.httpclient.HttpClient.<clinit>: 81] SunJSSE 1.6: Sun JSSE provider(PKCS12, SunX509 key/trust factories, SSLv3, TLSv1)
+DEBUG 2009-02-12 12:19:52 [o.a.c.httpclient.HttpClient.<clinit>: 81] SunJCE 1.6: SunJCE Provider (implements RSA, DES, Triple DES, AES, Blowfish, ARCFOUR, RC2, PBE, Diffie-Hellman, HMAC)
+DEBUG 2009-02-12 12:19:52 [o.a.c.httpclient.HttpClient.<clinit>: 81] SunJGSS 1.0: Sun (Kerberos v5, SPNEGO)
+DEBUG 2009-02-12 12:19:52 [o.a.c.httpclient.HttpClient.<clinit>: 81] SunSASL 1.5: Sun SASL provider(implements client mechanisms for: DIGEST-MD5, GSSAPI, EXTERNAL, PLAIN, CRAM-MD5; server mechanisms for: DIGEST-MD5, GSSAPI, CRAM-MD5)
+DEBUG 2009-02-12 12:19:52 [o.a.c.httpclient.HttpClient.<clinit>: 81] XMLDSig 1.0: XMLDSig (DOM XMLSignatureFactory; DOM KeyInfoFactory)
+DEBUG 2009-02-12 12:19:52 [o.a.c.httpclient.HttpClient.<clinit>: 81] SunPCSC 1.6: Sun PC/SC provider
+DEBUG 2009-02-12 12:19:52 [o.a.c.httpclient.HttpClient.<clinit>: 81] SunMSCAPI 1.6: Sun's Microsoft Crypto API provider
+DEBUG 2009-02-12 12:19:52 [         o.a.c.h.HttpConnection.open:691] Open connection to ecs.amazonaws.jp:80
+DEBUG 2009-02-12 12:20:23 [.HttpMethodDirector.executeWithRetry:403] Closing the connection.
+DEBUG 2009-02-12 12:20:23 [.HttpMethodDirector.executeWithRetry:433] Method retry handler returned false. Automatic recovery will not be attempted
+DEBUG 2009-02-12 12:20:23 [.h.HttpConnection.releaseConnection:1177] Releasing connection back to connection manager.
+DEBUG 2009-02-12 12:21:13 [c.h.p.DefaultHttpParams.setParameter:150] Set parameter http.useragent = Jakarta Commons-HttpClient/3.0
+DEBUG 2009-02-12 12:21:13 [c.h.p.DefaultHttpParams.setParameter:150] Set parameter http.protocol.version = HTTP/1.1
+DEBUG 2009-02-12 12:21:13 [c.h.p.DefaultHttpParams.setParameter:150] Set parameter http.connection-manager.class = class org.apache.commons.httpclient.SimpleHttpConnectionManager
+DEBUG 2009-02-12 12:21:13 [c.h.p.DefaultHttpParams.setParameter:150] Set parameter http.protocol.cookie-policy = rfc2109
+DEBUG 2009-02-12 12:21:13 [c.h.p.DefaultHttpParams.setParameter:150] Set parameter http.protocol.element-charset = US-ASCII
+DEBUG 2009-02-12 12:21:13 [c.h.p.DefaultHttpParams.setParameter:150] Set parameter http.protocol.content-charset = ISO-8859-1
+DEBUG 2009-02-12 12:21:13 [c.h.p.DefaultHttpParams.setParameter:150] Set parameter http.method.retry-handler = org.apache.commons.httpclient.DefaultHttpMethodRetryHandler@7a84e4
+DEBUG 2009-02-12 12:21:13 [c.h.p.DefaultHttpParams.setParameter:150] Set parameter http.dateparser.patterns = [EEE, dd MMM yyyy HH:mm:ss zzz, EEEE, dd-MMM-yy HH:mm:ss zzz, EEE MMM d HH:mm:ss yyyy, EEE, dd-MMM-yyyy HH:mm:ss z, EEE, dd-MMM-yyyy HH-mm-ss z, EEE, dd MMM yy HH:mm:ss z, EEE dd-MMM-yyyy HH:mm:ss z, EEE dd MMM yyyy HH:mm:ss z, EEE dd-MMM-yyyy HH-mm-ss z, EEE dd-MMM-yy HH:mm:ss z, EEE dd MMM yy HH:mm:ss z, EEE,dd-MMM-yy HH:mm:ss z, EEE,dd-MMM-yyyy HH:mm:ss z, EEE, dd-MM-yyyy HH:mm:ss z]
+DEBUG 2009-02-12 12:21:13 [o.a.c.httpclient.HttpClient.<clinit>: 71] Java version: 1.6.0_11
+DEBUG 2009-02-12 12:21:13 [o.a.c.httpclient.HttpClient.<clinit>: 72] Java vendor: Sun Microsystems Inc.
+DEBUG 2009-02-12 12:21:13 [o.a.c.httpclient.HttpClient.<clinit>: 73] Java class path: target/amazonchecker.jar
+DEBUG 2009-02-12 12:21:13 [o.a.c.httpclient.HttpClient.<clinit>: 74] Operating system name: Windows XP
+DEBUG 2009-02-12 12:21:13 [o.a.c.httpclient.HttpClient.<clinit>: 75] Operating system architecture: x86
+DEBUG 2009-02-12 12:21:13 [o.a.c.httpclient.HttpClient.<clinit>: 76] Operating system version: 5.1
+DEBUG 2009-02-12 12:21:13 [o.a.c.httpclient.HttpClient.<clinit>: 81] SUN 1.6: SUN (DSA key/parameter generation; DSA signing; SHA-1, MD5 digests; SecureRandom; X.509 certificates; JKS keystore; PKIX CertPathValidator; PKIX CertPathBuilder; LDAP, Collection CertStores, JavaPolicy Policy; JavaLoginConfig Configuration)
+DEBUG 2009-02-12 12:21:13 [o.a.c.httpclient.HttpClient.<clinit>: 81] SunRsaSign 1.5: Sun RSA signature provider
+DEBUG 2009-02-12 12:21:13 [o.a.c.httpclient.HttpClient.<clinit>: 81] SunJSSE 1.6: Sun JSSE provider(PKCS12, SunX509 key/trust factories, SSLv3, TLSv1)
+DEBUG 2009-02-12 12:21:13 [o.a.c.httpclient.HttpClient.<clinit>: 81] SunJCE 1.6: SunJCE Provider (implements RSA, DES, Triple DES, AES, Blowfish, ARCFOUR, RC2, PBE, Diffie-Hellman, HMAC)
+DEBUG 2009-02-12 12:21:13 [o.a.c.httpclient.HttpClient.<clinit>: 81] SunJGSS 1.0: Sun (Kerberos v5, SPNEGO)
+DEBUG 2009-02-12 12:21:13 [o.a.c.httpclient.HttpClient.<clinit>: 81] SunSASL 1.5: Sun SASL provider(implements client mechanisms for: DIGEST-MD5, GSSAPI, EXTERNAL, PLAIN, CRAM-MD5; server mechanisms for: DIGEST-MD5, GSSAPI, CRAM-MD5)
+DEBUG 2009-02-12 12:21:13 [o.a.c.httpclient.HttpClient.<clinit>: 81] XMLDSig 1.0: XMLDSig (DOM XMLSignatureFactory; DOM KeyInfoFactory)
+DEBUG 2009-02-12 12:21:13 [o.a.c.httpclient.HttpClient.<clinit>: 81] SunPCSC 1.6: Sun PC/SC provider
+DEBUG 2009-02-12 12:21:13 [o.a.c.httpclient.HttpClient.<clinit>: 81] SunMSCAPI 1.6: Sun's Microsoft Crypto API provider
+DEBUG 2009-02-12 12:21:13 [         o.a.c.h.HttpConnection.open:691] Open connection to ecs.amazonaws.jp:80
+DEBUG 2009-02-12 12:21:43 [.HttpMethodDirector.executeWithRetry:403] Closing the connection.
+DEBUG 2009-02-12 12:21:43 [.HttpMethodDirector.executeWithRetry:433] Method retry handler returned false. Automatic recovery will not be attempted
+DEBUG 2009-02-12 12:21:43 [.h.HttpConnection.releaseConnection:1177] Releasing connection back to connection manager.
+DEBUG 2009-02-12 12:22:59 [c.h.p.DefaultHttpParams.setParameter:150] Set parameter http.useragent = Jakarta Commons-HttpClient/3.0
+DEBUG 2009-02-12 12:22:59 [c.h.p.DefaultHttpParams.setParameter:150] Set parameter http.protocol.version = HTTP/1.1
+DEBUG 2009-02-12 12:22:59 [c.h.p.DefaultHttpParams.setParameter:150] Set parameter http.connection-manager.class = class org.apache.commons.httpclient.SimpleHttpConnectionManager
+DEBUG 2009-02-12 12:22:59 [c.h.p.DefaultHttpParams.setParameter:150] Set parameter http.protocol.cookie-policy = rfc2109
+DEBUG 2009-02-12 12:22:59 [c.h.p.DefaultHttpParams.setParameter:150] Set parameter http.protocol.element-charset = US-ASCII
+DEBUG 2009-02-12 12:22:59 [c.h.p.DefaultHttpParams.setParameter:150] Set parameter http.protocol.content-charset = ISO-8859-1
+DEBUG 2009-02-12 12:22:59 [c.h.p.DefaultHttpParams.setParameter:150] Set parameter http.method.retry-handler = org.apache.commons.httpclient.DefaultHttpMethodRetryHandler@7a84e4
+DEBUG 2009-02-12 12:22:59 [c.h.p.DefaultHttpParams.setParameter:150] Set parameter http.dateparser.patterns = [EEE, dd MMM yyyy HH:mm:ss zzz, EEEE, dd-MMM-yy HH:mm:ss zzz, EEE MMM d HH:mm:ss yyyy, EEE, dd-MMM-yyyy HH:mm:ss z, EEE, dd-MMM-yyyy HH-mm-ss z, EEE, dd MMM yy HH:mm:ss z, EEE dd-MMM-yyyy HH:mm:ss z, EEE dd MMM yyyy HH:mm:ss z, EEE dd-MMM-yyyy HH-mm-ss z, EEE dd-MMM-yy HH:mm:ss z, EEE dd MMM yy HH:mm:ss z, EEE,dd-MMM-yy HH:mm:ss z, EEE,dd-MMM-yyyy HH:mm:ss z, EEE, dd-MM-yyyy HH:mm:ss z]
+DEBUG 2009-02-12 12:22:59 [o.a.c.httpclient.HttpClient.<clinit>: 71] Java version: 1.6.0_11
+DEBUG 2009-02-12 12:22:59 [o.a.c.httpclient.HttpClient.<clinit>: 72] Java vendor: Sun Microsystems Inc.
+DEBUG 2009-02-12 12:22:59 [o.a.c.httpclient.HttpClient.<clinit>: 73] Java class path: target/amazonchecker.jar
+DEBUG 2009-02-12 12:22:59 [o.a.c.httpclient.HttpClient.<clinit>: 74] Operating system name: Windows XP
+DEBUG 2009-02-12 12:22:59 [o.a.c.httpclient.HttpClient.<clinit>: 75] Operating system architecture: x86
+DEBUG 2009-02-12 12:22:59 [o.a.c.httpclient.HttpClient.<clinit>: 76] Operating system version: 5.1
+DEBUG 2009-02-12 12:22:59 [o.a.c.httpclient.HttpClient.<clinit>: 81] SUN 1.6: SUN (DSA key/parameter generation; DSA signing; SHA-1, MD5 digests; SecureRandom; X.509 certificates; JKS keystore; PKIX CertPathValidator; PKIX CertPathBuilder; LDAP, Collection CertStores, JavaPolicy Policy; JavaLoginConfig Configuration)
+DEBUG 2009-02-12 12:22:59 [o.a.c.httpclient.HttpClient.<clinit>: 81] SunRsaSign 1.5: Sun RSA signature provider
+DEBUG 2009-02-12 12:22:59 [o.a.c.httpclient.HttpClient.<clinit>: 81] SunJSSE 1.6: Sun JSSE provider(PKCS12, SunX509 key/trust factories, SSLv3, TLSv1)
+DEBUG 2009-02-12 12:22:59 [o.a.c.httpclient.HttpClient.<clinit>: 81] SunJCE 1.6: SunJCE Provider (implements RSA, DES, Triple DES, AES, Blowfish, ARCFOUR, RC2, PBE, Diffie-Hellman, HMAC)
+DEBUG 2009-02-12 12:22:59 [o.a.c.httpclient.HttpClient.<clinit>: 81] SunJGSS 1.0: Sun (Kerberos v5, SPNEGO)
+DEBUG 2009-02-12 12:22:59 [o.a.c.httpclient.HttpClient.<clinit>: 81] SunSASL 1.5: Sun SASL provider(implements client mechanisms for: DIGEST-MD5, GSSAPI, EXTERNAL, PLAIN, CRAM-MD5; server mechanisms for: DIGEST-MD5, GSSAPI, CRAM-MD5)
+DEBUG 2009-02-12 12:22:59 [o.a.c.httpclient.HttpClient.<clinit>: 81] XMLDSig 1.0: XMLDSig (DOM XMLSignatureFactory; DOM KeyInfoFactory)
+DEBUG 2009-02-12 12:22:59 [o.a.c.httpclient.HttpClient.<clinit>: 81] SunPCSC 1.6: Sun PC/SC provider
+DEBUG 2009-02-12 12:22:59 [o.a.c.httpclient.HttpClient.<clinit>: 81] SunMSCAPI 1.6: Sun's Microsoft Crypto API provider
+DEBUG 2009-02-12 12:22:59 [         o.a.c.h.HttpConnection.open:691] Open connection to ecs.amazonaws.jp:80
+DEBUG 2009-02-12 12:24:12 [HttpMethodBase.addHostRequestHeader:1235] Adding Host request header
+WARN  2009-02-12 12:24:13 [a.c.h.HttpMethodBase.getResponseBody:676] Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+DEBUG 2009-02-12 12:24:13 [a.c.h.HttpMethodBase.getResponseBody:679] Buffering response body
+DEBUG 2009-02-12 12:24:13 [HttpMethodBase.shouldCloseConnection:921] Resorting to protocol version default close connection policy
+DEBUG 2009-02-12 12:24:13 [HttpMethodBase.shouldCloseConnection:925] Should NOT close connection, using HTTP/1.1
+DEBUG 2009-02-12 12:24:13 [.h.HttpConnection.releaseConnection:1177] Releasing connection back to connection manager.
+DEBUG 2009-02-12 12:24:17 [c.h.p.DefaultHttpParams.setParameter:150] Set parameter http.useragent = Jakarta Commons-HttpClient/3.0
+DEBUG 2009-02-12 12:24:17 [c.h.p.DefaultHttpParams.setParameter:150] Set parameter http.protocol.version = HTTP/1.1
+DEBUG 2009-02-12 12:24:17 [c.h.p.DefaultHttpParams.setParameter:150] Set parameter http.connection-manager.class = class org.apache.commons.httpclient.SimpleHttpConnectionManager
+DEBUG 2009-02-12 12:24:17 [c.h.p.DefaultHttpParams.setParameter:150] Set parameter http.protocol.cookie-policy = rfc2109
+DEBUG 2009-02-12 12:24:17 [c.h.p.DefaultHttpParams.setParameter:150] Set parameter http.protocol.element-charset = US-ASCII
+DEBUG 2009-02-12 12:24:17 [c.h.p.DefaultHttpParams.setParameter:150] Set parameter http.protocol.content-charset = ISO-8859-1
+DEBUG 2009-02-12 12:24:17 [c.h.p.DefaultHttpParams.setParameter:150] Set parameter http.method.retry-handler = org.apache.commons.httpclient.DefaultHttpMethodRetryHandler@7a84e4
+DEBUG 2009-02-12 12:24:17 [c.h.p.DefaultHttpParams.setParameter:150] Set parameter http.dateparser.patterns = [EEE, dd MMM yyyy HH:mm:ss zzz, EEEE, dd-MMM-yy HH:mm:ss zzz, EEE MMM d HH:mm:ss yyyy, EEE, dd-MMM-yyyy HH:mm:ss z, EEE, dd-MMM-yyyy HH-mm-ss z, EEE, dd MMM yy HH:mm:ss z, EEE dd-MMM-yyyy HH:mm:ss z, EEE dd MMM yyyy HH:mm:ss z, EEE dd-MMM-yyyy HH-mm-ss z, EEE dd-MMM-yy HH:mm:ss z, EEE dd MMM yy HH:mm:ss z, EEE,dd-MMM-yy HH:mm:ss z, EEE,dd-MMM-yyyy HH:mm:ss z, EEE, dd-MM-yyyy HH:mm:ss z]
+DEBUG 2009-02-12 12:24:17 [o.a.c.httpclient.HttpClient.<clinit>: 71] Java version: 1.6.0_11
+DEBUG 2009-02-12 12:24:17 [o.a.c.httpclient.HttpClient.<clinit>: 72] Java vendor: Sun Microsystems Inc.
+DEBUG 2009-02-12 12:24:17 [o.a.c.httpclient.HttpClient.<clinit>: 73] Java class path: target/amazonchecker.jar
+DEBUG 2009-02-12 12:24:17 [o.a.c.httpclient.HttpClient.<clinit>: 74] Operating system name: Windows XP
+DEBUG 2009-02-12 12:24:17 [o.a.c.httpclient.HttpClient.<clinit>: 75] Operating system architecture: x86
+DEBUG 2009-02-12 12:24:17 [o.a.c.httpclient.HttpClient.<clinit>: 76] Operating system version: 5.1
+DEBUG 2009-02-12 12:24:18 [o.a.c.httpclient.HttpClient.<clinit>: 81] SUN 1.6: SUN (DSA key/parameter generation; DSA signing; SHA-1, MD5 digests; SecureRandom; X.509 certificates; JKS keystore; PKIX CertPathValidator; PKIX CertPathBuilder; LDAP, Collection CertStores, JavaPolicy Policy; JavaLoginConfig Configuration)
+DEBUG 2009-02-12 12:24:18 [o.a.c.httpclient.HttpClient.<clinit>: 81] SunRsaSign 1.5: Sun RSA signature provider
+DEBUG 2009-02-12 12:24:18 [o.a.c.httpclient.HttpClient.<clinit>: 81] SunJSSE 1.6: Sun JSSE provider(PKCS12, SunX509 key/trust factories, SSLv3, TLSv1)
+DEBUG 2009-02-12 12:24:18 [o.a.c.httpclient.HttpClient.<clinit>: 81] SunJCE 1.6: SunJCE Provider (implements RSA, DES, Triple DES, AES, Blowfish, ARCFOUR, RC2, PBE, Diffie-Hellman, HMAC)
+DEBUG 2009-02-12 12:24:18 [o.a.c.httpclient.HttpClient.<clinit>: 81] SunJGSS 1.0: Sun (Kerberos v5, SPNEGO)
+DEBUG 2009-02-12 12:24:18 [o.a.c.httpclient.HttpClient.<clinit>: 81] SunSASL 1.5: Sun SASL provider(implements client mechanisms for: DIGEST-MD5, GSSAPI, EXTERNAL, PLAIN, CRAM-MD5; server mechanisms for: DIGEST-MD5, GSSAPI, CRAM-MD5)
+DEBUG 2009-02-12 12:24:18 [o.a.c.httpclient.HttpClient.<clinit>: 81] XMLDSig 1.0: XMLDSig (DOM XMLSignatureFactory; DOM KeyInfoFactory)
+DEBUG 2009-02-12 12:24:18 [o.a.c.httpclient.HttpClient.<clinit>: 81] SunPCSC 1.6: Sun PC/SC provider
+DEBUG 2009-02-12 12:24:18 [o.a.c.httpclient.HttpClient.<clinit>: 81] SunMSCAPI 1.6: Sun's Microsoft Crypto API provider
+DEBUG 2009-02-12 12:24:18 [         o.a.c.h.HttpConnection.open:691] Open connection to ecs.amazonaws.jp:80
+DEBUG 2009-02-12 12:24:18 [HttpMethodBase.addHostRequestHeader:1235] Adding Host request header
+WARN  2009-02-12 12:24:18 [a.c.h.HttpMethodBase.getResponseBody:676] Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+DEBUG 2009-02-12 12:24:18 [a.c.h.HttpMethodBase.getResponseBody:679] Buffering response body
+DEBUG 2009-02-12 12:24:18 [HttpMethodBase.shouldCloseConnection:921] Resorting to protocol version default close connection policy
+DEBUG 2009-02-12 12:24:18 [HttpMethodBase.shouldCloseConnection:925] Should NOT close connection, using HTTP/1.1
+DEBUG 2009-02-12 12:24:18 [.h.HttpConnection.releaseConnection:1177] Releasing connection back to connection manager.
+DEBUG 2009-02-12 12:24:34 [c.h.p.DefaultHttpParams.setParameter:150] Set parameter http.useragent = Jakarta Commons-HttpClient/3.0
+DEBUG 2009-02-12 12:24:34 [c.h.p.DefaultHttpParams.setParameter:150] Set parameter http.protocol.version = HTTP/1.1
+DEBUG 2009-02-12 12:24:34 [c.h.p.DefaultHttpParams.setParameter:150] Set parameter http.connection-manager.class = class org.apache.commons.httpclient.SimpleHttpConnectionManager
+DEBUG 2009-02-12 12:24:34 [c.h.p.DefaultHttpParams.setParameter:150] Set parameter http.protocol.cookie-policy = rfc2109
+DEBUG 2009-02-12 12:24:34 [c.h.p.DefaultHttpParams.setParameter:150] Set parameter http.protocol.element-charset = US-ASCII
+DEBUG 2009-02-12 12:24:34 [c.h.p.DefaultHttpParams.setParameter:150] Set parameter http.protocol.content-charset = ISO-8859-1
+DEBUG 2009-02-12 12:24:34 [c.h.p.DefaultHttpParams.setParameter:150] Set parameter http.method.retry-handler = org.apache.commons.httpclient.DefaultHttpMethodRetryHandler@7a84e4
+DEBUG 2009-02-12 12:24:34 [c.h.p.DefaultHttpParams.setParameter:150] Set parameter http.dateparser.patterns = [EEE, dd MMM yyyy HH:mm:ss zzz, EEEE, dd-MMM-yy HH:mm:ss zzz, EEE MMM d HH:mm:ss yyyy, EEE, dd-MMM-yyyy HH:mm:ss z, EEE, dd-MMM-yyyy HH-mm-ss z, EEE, dd MMM yy HH:mm:ss z, EEE dd-MMM-yyyy HH:mm:ss z, EEE dd MMM yyyy HH:mm:ss z, EEE dd-MMM-yyyy HH-mm-ss z, EEE dd-MMM-yy HH:mm:ss z, EEE dd MMM yy HH:mm:ss z, EEE,dd-MMM-yy HH:mm:ss z, EEE,dd-MMM-yyyy HH:mm:ss z, EEE, dd-MM-yyyy HH:mm:ss z]
+DEBUG 2009-02-12 12:24:34 [o.a.c.httpclient.HttpClient.<clinit>: 71] Java version: 1.6.0_11
+DEBUG 2009-02-12 12:24:34 [o.a.c.httpclient.HttpClient.<clinit>: 72] Java vendor: Sun Microsystems Inc.
+DEBUG 2009-02-12 12:24:34 [o.a.c.httpclient.HttpClient.<clinit>: 73] Java class path: target/amazonchecker.jar
+DEBUG 2009-02-12 12:24:34 [o.a.c.httpclient.HttpClient.<clinit>: 74] Operating system name: Windows XP
+DEBUG 2009-02-12 12:24:34 [o.a.c.httpclient.HttpClient.<clinit>: 75] Operating system architecture: x86
+DEBUG 2009-02-12 12:24:34 [o.a.c.httpclient.HttpClient.<clinit>: 76] Operating system version: 5.1
+DEBUG 2009-02-12 12:24:34 [o.a.c.httpclient.HttpClient.<clinit>: 81] SUN 1.6: SUN (DSA key/parameter generation; DSA signing; SHA-1, MD5 digests; SecureRandom; X.509 certificates; JKS keystore; PKIX CertPathValidator; PKIX CertPathBuilder; LDAP, Collection CertStores, JavaPolicy Policy; JavaLoginConfig Configuration)
+DEBUG 2009-02-12 12:24:34 [o.a.c.httpclient.HttpClient.<clinit>: 81] SunRsaSign 1.5: Sun RSA signature provider
+DEBUG 2009-02-12 12:24:34 [o.a.c.httpclient.HttpClient.<clinit>: 81] SunJSSE 1.6: Sun JSSE provider(PKCS12, SunX509 key/trust factories, SSLv3, TLSv1)
+DEBUG 2009-02-12 12:24:34 [o.a.c.httpclient.HttpClient.<clinit>: 81] SunJCE 1.6: SunJCE Provider (implements RSA, DES, Triple DES, AES, Blowfish, ARCFOUR, RC2, PBE, Diffie-Hellman, HMAC)
+DEBUG 2009-02-12 12:24:34 [o.a.c.httpclient.HttpClient.<clinit>: 81] SunJGSS 1.0: Sun (Kerberos v5, SPNEGO)
+DEBUG 2009-02-12 12:24:34 [o.a.c.httpclient.HttpClient.<clinit>: 81] SunSASL 1.5: Sun SASL provider(implements client mechanisms for: DIGEST-MD5, GSSAPI, EXTERNAL, PLAIN, CRAM-MD5; server mechanisms for: DIGEST-MD5, GSSAPI, CRAM-MD5)
+DEBUG 2009-02-12 12:24:34 [o.a.c.httpclient.HttpClient.<clinit>: 81] XMLDSig 1.0: XMLDSig (DOM XMLSignatureFactory; DOM KeyInfoFactory)
+DEBUG 2009-02-12 12:24:34 [o.a.c.httpclient.HttpClient.<clinit>: 81] SunPCSC 1.6: Sun PC/SC provider
+DEBUG 2009-02-12 12:24:34 [o.a.c.httpclient.HttpClient.<clinit>: 81] SunMSCAPI 1.6: Sun's Microsoft Crypto API provider
+DEBUG 2009-02-12 12:24:34 [         o.a.c.h.HttpConnection.open:691] Open connection to ecs.amazonaws.jp:80
+DEBUG 2009-02-12 12:24:35 [HttpMethodBase.addHostRequestHeader:1235] Adding Host request header
+WARN  2009-02-12 12:24:35 [a.c.h.HttpMethodBase.getResponseBody:676] Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+DEBUG 2009-02-12 12:24:35 [a.c.h.HttpMethodBase.getResponseBody:679] Buffering response body
+DEBUG 2009-02-12 12:24:35 [HttpMethodBase.shouldCloseConnection:921] Resorting to protocol version default close connection policy
+DEBUG 2009-02-12 12:24:35 [HttpMethodBase.shouldCloseConnection:925] Should NOT close connection, using HTTP/1.1
+DEBUG 2009-02-12 12:24:35 [.h.HttpConnection.releaseConnection:1177] Releasing connection back to connection manager.
+DEBUG 2009-02-12 15:48:04 [c.h.p.DefaultHttpParams.setParameter:150] Set parameter http.useragent = Jakarta Commons-HttpClient/3.0
+DEBUG 2009-02-12 15:48:04 [c.h.p.DefaultHttpParams.setParameter:150] Set parameter http.protocol.version = HTTP/1.1
+DEBUG 2009-02-12 15:48:04 [c.h.p.DefaultHttpParams.setParameter:150] Set parameter http.connection-manager.class = class org.apache.commons.httpclient.SimpleHttpConnectionManager
+DEBUG 2009-02-12 15:48:04 [c.h.p.DefaultHttpParams.setParameter:150] Set parameter http.protocol.cookie-policy = rfc2109
+DEBUG 2009-02-12 15:48:04 [c.h.p.DefaultHttpParams.setParameter:150] Set parameter http.protocol.element-charset = US-ASCII
+DEBUG 2009-02-12 15:48:04 [c.h.p.DefaultHttpParams.setParameter:150] Set parameter http.protocol.content-charset = ISO-8859-1
+DEBUG 2009-02-12 15:48:04 [c.h.p.DefaultHttpParams.setParameter:150] Set parameter http.method.retry-handler = org.apache.commons.httpclient.DefaultHttpMethodRetryHandler@7a84e4
+DEBUG 2009-02-12 15:48:04 [c.h.p.DefaultHttpParams.setParameter:150] Set parameter http.dateparser.patterns = [EEE, dd MMM yyyy HH:mm:ss zzz, EEEE, dd-MMM-yy HH:mm:ss zzz, EEE MMM d HH:mm:ss yyyy, EEE, dd-MMM-yyyy HH:mm:ss z, EEE, dd-MMM-yyyy HH-mm-ss z, EEE, dd MMM yy HH:mm:ss z, EEE dd-MMM-yyyy HH:mm:ss z, EEE dd MMM yyyy HH:mm:ss z, EEE dd-MMM-yyyy HH-mm-ss z, EEE dd-MMM-yy HH:mm:ss z, EEE dd MMM yy HH:mm:ss z, EEE,dd-MMM-yy HH:mm:ss z, EEE,dd-MMM-yyyy HH:mm:ss z, EEE, dd-MM-yyyy HH:mm:ss z]
+DEBUG 2009-02-12 15:48:04 [o.a.c.httpclient.HttpClient.<clinit>: 71] Java version: 1.6.0_11
+DEBUG 2009-02-12 15:48:04 [o.a.c.httpclient.HttpClient.<clinit>: 72] Java vendor: Sun Microsystems Inc.
+DEBUG 2009-02-12 15:48:04 [o.a.c.httpclient.HttpClient.<clinit>: 73] Java class path: target/amazonchecker.jar
+DEBUG 2009-02-12 15:48:04 [o.a.c.httpclient.HttpClient.<clinit>: 74] Operating system name: Windows XP
+DEBUG 2009-02-12 15:48:04 [o.a.c.httpclient.HttpClient.<clinit>: 75] Operating system architecture: x86
+DEBUG 2009-02-12 15:48:04 [o.a.c.httpclient.HttpClient.<clinit>: 76] Operating system version: 5.1
+DEBUG 2009-02-12 15:48:05 [o.a.c.httpclient.HttpClient.<clinit>: 81] SUN 1.6: SUN (DSA key/parameter generation; DSA signing; SHA-1, MD5 digests; SecureRandom; X.509 certificates; JKS keystore; PKIX CertPathValidator; PKIX CertPathBuilder; LDAP, Collection CertStores, JavaPolicy Policy; JavaLoginConfig Configuration)
+DEBUG 2009-02-12 15:48:05 [o.a.c.httpclient.HttpClient.<clinit>: 81] SunRsaSign 1.5: Sun RSA signature provider
+DEBUG 2009-02-12 15:48:05 [o.a.c.httpclient.HttpClient.<clinit>: 81] SunJSSE 1.6: Sun JSSE provider(PKCS12, SunX509 key/trust factories, SSLv3, TLSv1)
+DEBUG 2009-02-12 15:48:05 [o.a.c.httpclient.HttpClient.<clinit>: 81] SunJCE 1.6: SunJCE Provider (implements RSA, DES, Triple DES, AES, Blowfish, ARCFOUR, RC2, PBE, Diffie-Hellman, HMAC)
+DEBUG 2009-02-12 15:48:05 [o.a.c.httpclient.HttpClient.<clinit>: 81] SunJGSS 1.0: Sun (Kerberos v5, SPNEGO)
+DEBUG 2009-02-12 15:48:05 [o.a.c.httpclient.HttpClient.<clinit>: 81] SunSASL 1.5: Sun SASL provider(implements client mechanisms for: DIGEST-MD5, GSSAPI, EXTERNAL, PLAIN, CRAM-MD5; server mechanisms for: DIGEST-MD5, GSSAPI, CRAM-MD5)
+DEBUG 2009-02-12 15:48:05 [o.a.c.httpclient.HttpClient.<clinit>: 81] XMLDSig 1.0: XMLDSig (DOM XMLSignatureFactory; DOM KeyInfoFactory)
+DEBUG 2009-02-12 15:48:05 [o.a.c.httpclient.HttpClient.<clinit>: 81] SunPCSC 1.6: Sun PC/SC provider
+DEBUG 2009-02-12 15:48:05 [o.a.c.httpclient.HttpClient.<clinit>: 81] SunMSCAPI 1.6: Sun's Microsoft Crypto API provider
+DEBUG 2009-02-12 15:48:05 [         o.a.c.h.HttpConnection.open:691] Open connection to ecs.amazonaws.jp:80
+DEBUG 2009-02-12 15:48:06 [.HttpMethodDirector.executeWithRetry:403] Closing the connection.
+DEBUG 2009-02-12 15:48:06 [.HttpMethodDirector.executeWithRetry:433] Method retry handler returned false. Automatic recovery will not be attempted
+DEBUG 2009-02-12 15:48:06 [.h.HttpConnection.releaseConnection:1177] Releasing connection back to connection manager.
+DEBUG 2009-02-12 15:48:42 [c.h.p.DefaultHttpParams.setParameter:150] Set parameter http.useragent = Jakarta Commons-HttpClient/3.0
+DEBUG 2009-02-12 15:48:42 [c.h.p.DefaultHttpParams.setParameter:150] Set parameter http.protocol.version = HTTP/1.1
+DEBUG 2009-02-12 15:48:42 [c.h.p.DefaultHttpParams.setParameter:150] Set parameter http.connection-manager.class = class org.apache.commons.httpclient.SimpleHttpConnectionManager
+DEBUG 2009-02-12 15:48:42 [c.h.p.DefaultHttpParams.setParameter:150] Set parameter http.protocol.cookie-policy = rfc2109
+DEBUG 2009-02-12 15:48:42 [c.h.p.DefaultHttpParams.setParameter:150] Set parameter http.protocol.element-charset = US-ASCII
+DEBUG 2009-02-12 15:48:42 [c.h.p.DefaultHttpParams.setParameter:150] Set parameter http.protocol.content-charset = ISO-8859-1
+DEBUG 2009-02-12 15:48:42 [c.h.p.DefaultHttpParams.setParameter:150] Set parameter http.method.retry-handler = org.apache.commons.httpclient.DefaultHttpMethodRetryHandler@7a84e4
+DEBUG 2009-02-12 15:48:42 [c.h.p.DefaultHttpParams.setParameter:150] Set parameter http.dateparser.patterns = [EEE, dd MMM yyyy HH:mm:ss zzz, EEEE, dd-MMM-yy HH:mm:ss zzz, EEE MMM d HH:mm:ss yyyy, EEE, dd-MMM-yyyy HH:mm:ss z, EEE, dd-MMM-yyyy HH-mm-ss z, EEE, dd MMM yy HH:mm:ss z, EEE dd-MMM-yyyy HH:mm:ss z, EEE dd MMM yyyy HH:mm:ss z, EEE dd-MMM-yyyy HH-mm-ss z, EEE dd-MMM-yy HH:mm:ss z, EEE dd MMM yy HH:mm:ss z, EEE,dd-MMM-yy HH:mm:ss z, EEE,dd-MMM-yyyy HH:mm:ss z, EEE, dd-MM-yyyy HH:mm:ss z]
+DEBUG 2009-02-12 15:48:42 [o.a.c.httpclient.HttpClient.<clinit>: 71] Java version: 1.6.0_11
+DEBUG 2009-02-12 15:48:42 [o.a.c.httpclient.HttpClient.<clinit>: 72] Java vendor: Sun Microsystems Inc.
+DEBUG 2009-02-12 15:48:42 [o.a.c.httpclient.HttpClient.<clinit>: 73] Java class path: target/amazonchecker.jar
+DEBUG 2009-02-12 15:48:42 [o.a.c.httpclient.HttpClient.<clinit>: 74] Operating system name: Windows XP
+DEBUG 2009-02-12 15:48:42 [o.a.c.httpclient.HttpClient.<clinit>: 75] Operating system architecture: x86
+DEBUG 2009-02-12 15:48:42 [o.a.c.httpclient.HttpClient.<clinit>: 76] Operating system version: 5.1
+DEBUG 2009-02-12 15:48:43 [o.a.c.httpclient.HttpClient.<clinit>: 81] SUN 1.6: SUN (DSA key/parameter generation; DSA signing; SHA-1, MD5 digests; SecureRandom; X.509 certificates; JKS keystore; PKIX CertPathValidator; PKIX CertPathBuilder; LDAP, Collection CertStores, JavaPolicy Policy; JavaLoginConfig Configuration)
+DEBUG 2009-02-12 15:48:43 [o.a.c.httpclient.HttpClient.<clinit>: 81] SunRsaSign 1.5: Sun RSA signature provider
+DEBUG 2009-02-12 15:48:43 [o.a.c.httpclient.HttpClient.<clinit>: 81] SunJSSE 1.6: Sun JSSE provider(PKCS12, SunX509 key/trust factories, SSLv3, TLSv1)
+DEBUG 2009-02-12 15:48:43 [o.a.c.httpclient.HttpClient.<clinit>: 81] SunJCE 1.6: SunJCE Provider (implements RSA, DES, Triple DES, AES, Blowfish, ARCFOUR, RC2, PBE, Diffie-Hellman, HMAC)
+DEBUG 2009-02-12 15:48:43 [o.a.c.httpclient.HttpClient.<clinit>: 81] SunJGSS 1.0: Sun (Kerberos v5, SPNEGO)
+DEBUG 2009-02-12 15:48:43 [o.a.c.httpclient.HttpClient.<clinit>: 81] SunSASL 1.5: Sun SASL provider(implements client mechanisms for: DIGEST-MD5, GSSAPI, EXTERNAL, PLAIN, CRAM-MD5; server mechanisms for: DIGEST-MD5, GSSAPI, CRAM-MD5)
+DEBUG 2009-02-12 15:48:43 [o.a.c.httpclient.HttpClient.<clinit>: 81] XMLDSig 1.0: XMLDSig (DOM XMLSignatureFactory; DOM KeyInfoFactory)
+DEBUG 2009-02-12 15:48:43 [o.a.c.httpclient.HttpClient.<clinit>: 81] SunPCSC 1.6: Sun PC/SC provider
+DEBUG 2009-02-12 15:48:43 [o.a.c.httpclient.HttpClient.<clinit>: 81] SunMSCAPI 1.6: Sun's Microsoft Crypto API provider
+DEBUG 2009-02-12 15:48:43 [         o.a.c.h.HttpConnection.open:691] Open connection to ecs.amazonaws.jp:80
+DEBUG 2009-02-12 15:48:43 [.HttpMethodDirector.executeWithRetry:403] Closing the connection.
+DEBUG 2009-02-12 15:48:43 [.HttpMethodDirector.executeWithRetry:433] Method retry handler returned false. Automatic recovery will not be attempted
+DEBUG 2009-02-12 15:48:43 [.h.HttpConnection.releaseConnection:1177] Releasing connection back to connection manager.
+DEBUG 2009-02-12 15:49:06 [c.h.p.DefaultHttpParams.setParameter:150] Set parameter http.useragent = Jakarta Commons-HttpClient/3.0
+DEBUG 2009-02-12 15:49:06 [c.h.p.DefaultHttpParams.setParameter:150] Set parameter http.protocol.version = HTTP/1.1
+DEBUG 2009-02-12 15:49:06 [c.h.p.DefaultHttpParams.setParameter:150] Set parameter http.connection-manager.class = class org.apache.commons.httpclient.SimpleHttpConnectionManager
+DEBUG 2009-02-12 15:49:06 [c.h.p.DefaultHttpParams.setParameter:150] Set parameter http.protocol.cookie-policy = rfc2109
+DEBUG 2009-02-12 15:49:06 [c.h.p.DefaultHttpParams.setParameter:150] Set parameter http.protocol.element-charset = US-ASCII
+DEBUG 2009-02-12 15:49:06 [c.h.p.DefaultHttpParams.setParameter:150] Set parameter http.protocol.content-charset = ISO-8859-1
+DEBUG 2009-02-12 15:49:06 [c.h.p.DefaultHttpParams.setParameter:150] Set parameter http.method.retry-handler = org.apache.commons.httpclient.DefaultHttpMethodRetryHandler@7a84e4
+DEBUG 2009-02-12 15:49:06 [c.h.p.DefaultHttpParams.setParameter:150] Set parameter http.dateparser.patterns = [EEE, dd MMM yyyy HH:mm:ss zzz, EEEE, dd-MMM-yy HH:mm:ss zzz, EEE MMM d HH:mm:ss yyyy, EEE, dd-MMM-yyyy HH:mm:ss z, EEE, dd-MMM-yyyy HH-mm-ss z, EEE, dd MMM yy HH:mm:ss z, EEE dd-MMM-yyyy HH:mm:ss z, EEE dd MMM yyyy HH:mm:ss z, EEE dd-MMM-yyyy HH-mm-ss z, EEE dd-MMM-yy HH:mm:ss z, EEE dd MMM yy HH:mm:ss z, EEE,dd-MMM-yy HH:mm:ss z, EEE,dd-MMM-yyyy HH:mm:ss z, EEE, dd-MM-yyyy HH:mm:ss z]
+DEBUG 2009-02-12 15:49:06 [o.a.c.httpclient.HttpClient.<clinit>: 71] Java version: 1.6.0_11
+DEBUG 2009-02-12 15:49:06 [o.a.c.httpclient.HttpClient.<clinit>: 72] Java vendor: Sun Microsystems Inc.
+DEBUG 2009-02-12 15:49:06 [o.a.c.httpclient.HttpClient.<clinit>: 73] Java class path: target/amazonchecker.jar
+DEBUG 2009-02-12 15:49:06 [o.a.c.httpclient.HttpClient.<clinit>: 74] Operating system name: Windows XP
+DEBUG 2009-02-12 15:49:06 [o.a.c.httpclient.HttpClient.<clinit>: 75] Operating system architecture: x86
+DEBUG 2009-02-12 15:49:06 [o.a.c.httpclient.HttpClient.<clinit>: 76] Operating system version: 5.1
+DEBUG 2009-02-12 15:49:06 [o.a.c.httpclient.HttpClient.<clinit>: 81] SUN 1.6: SUN (DSA key/parameter generation; DSA signing; SHA-1, MD5 digests; SecureRandom; X.509 certificates; JKS keystore; PKIX CertPathValidator; PKIX CertPathBuilder; LDAP, Collection CertStores, JavaPolicy Policy; JavaLoginConfig Configuration)
+DEBUG 2009-02-12 15:49:06 [o.a.c.httpclient.HttpClient.<clinit>: 81] SunRsaSign 1.5: Sun RSA signature provider
+DEBUG 2009-02-12 15:49:06 [o.a.c.httpclient.HttpClient.<clinit>: 81] SunJSSE 1.6: Sun JSSE provider(PKCS12, SunX509 key/trust factories, SSLv3, TLSv1)
+DEBUG 2009-02-12 15:49:06 [o.a.c.httpclient.HttpClient.<clinit>: 81] SunJCE 1.6: SunJCE Provider (implements RSA, DES, Triple DES, AES, Blowfish, ARCFOUR, RC2, PBE, Diffie-Hellman, HMAC)
+DEBUG 2009-02-12 15:49:06 [o.a.c.httpclient.HttpClient.<clinit>: 81] SunJGSS 1.0: Sun (Kerberos v5, SPNEGO)
+DEBUG 2009-02-12 15:49:06 [o.a.c.httpclient.HttpClient.<clinit>: 81] SunSASL 1.5: Sun SASL provider(implements client mechanisms for: DIGEST-MD5, GSSAPI, EXTERNAL, PLAIN, CRAM-MD5; server mechanisms for: DIGEST-MD5, GSSAPI, CRAM-MD5)
+DEBUG 2009-02-12 15:49:06 [o.a.c.httpclient.HttpClient.<clinit>: 81] XMLDSig 1.0: XMLDSig (DOM XMLSignatureFactory; DOM KeyInfoFactory)
+DEBUG 2009-02-12 15:49:06 [o.a.c.httpclient.HttpClient.<clinit>: 81] SunPCSC 1.6: Sun PC/SC provider
+DEBUG 2009-02-12 15:49:06 [o.a.c.httpclient.HttpClient.<clinit>: 81] SunMSCAPI 1.6: Sun's Microsoft Crypto API provider
+DEBUG 2009-02-12 15:49:06 [         o.a.c.h.HttpConnection.open:691] Open connection to ecs.amazonaws.jp:80
+DEBUG 2009-02-12 15:49:06 [.HttpMethodDirector.executeWithRetry:403] Closing the connection.
+DEBUG 2009-02-12 15:49:06 [.HttpMethodDirector.executeWithRetry:433] Method retry handler returned false. Automatic recovery will not be attempted
+DEBUG 2009-02-12 15:49:06 [.h.HttpConnection.releaseConnection:1177] Releasing connection back to connection manager.
+DEBUG 2009-02-12 15:49:33 [c.h.p.DefaultHttpParams.setParameter:150] Set parameter http.useragent = Jakarta Commons-HttpClient/3.0
+DEBUG 2009-02-12 15:49:33 [c.h.p.DefaultHttpParams.setParameter:150] Set parameter http.protocol.version = HTTP/1.1
+DEBUG 2009-02-12 15:49:33 [c.h.p.DefaultHttpParams.setParameter:150] Set parameter http.connection-manager.class = class org.apache.commons.httpclient.SimpleHttpConnectionManager
+DEBUG 2009-02-12 15:49:33 [c.h.p.DefaultHttpParams.setParameter:150] Set parameter http.protocol.cookie-policy = rfc2109
+DEBUG 2009-02-12 15:49:33 [c.h.p.DefaultHttpParams.setParameter:150] Set parameter http.protocol.element-charset = US-ASCII
+DEBUG 2009-02-12 15:49:33 [c.h.p.DefaultHttpParams.setParameter:150] Set parameter http.protocol.content-charset = ISO-8859-1
+DEBUG 2009-02-12 15:49:33 [c.h.p.DefaultHttpParams.setParameter:150] Set parameter http.method.retry-handler = org.apache.commons.httpclient.DefaultHttpMethodRetryHandler@7a84e4
+DEBUG 2009-02-12 15:49:33 [c.h.p.DefaultHttpParams.setParameter:150] Set parameter http.dateparser.patterns = [EEE, dd MMM yyyy HH:mm:ss zzz, EEEE, dd-MMM-yy HH:mm:ss zzz, EEE MMM d HH:mm:ss yyyy, EEE, dd-MMM-yyyy HH:mm:ss z, EEE, dd-MMM-yyyy HH-mm-ss z, EEE, dd MMM yy HH:mm:ss z, EEE dd-MMM-yyyy HH:mm:ss z, EEE dd MMM yyyy HH:mm:ss z, EEE dd-MMM-yyyy HH-mm-ss z, EEE dd-MMM-yy HH:mm:ss z, EEE dd MMM yy HH:mm:ss z, EEE,dd-MMM-yy HH:mm:ss z, EEE,dd-MMM-yyyy HH:mm:ss z, EEE, dd-MM-yyyy HH:mm:ss z]
+DEBUG 2009-02-12 15:49:33 [o.a.c.httpclient.HttpClient.<clinit>: 71] Java version: 1.6.0_11
+DEBUG 2009-02-12 15:49:33 [o.a.c.httpclient.HttpClient.<clinit>: 72] Java vendor: Sun Microsystems Inc.
+DEBUG 2009-02-12 15:49:33 [o.a.c.httpclient.HttpClient.<clinit>: 73] Java class path: target/amazonchecker.jar
+DEBUG 2009-02-12 15:49:33 [o.a.c.httpclient.HttpClient.<clinit>: 74] Operating system name: Windows XP
+DEBUG 2009-02-12 15:49:33 [o.a.c.httpclient.HttpClient.<clinit>: 75] Operating system architecture: x86
+DEBUG 2009-02-12 15:49:33 [o.a.c.httpclient.HttpClient.<clinit>: 76] Operating system version: 5.1
+DEBUG 2009-02-12 15:49:34 [o.a.c.httpclient.HttpClient.<clinit>: 81] SUN 1.6: SUN (DSA key/parameter generation; DSA signing; SHA-1, MD5 digests; SecureRandom; X.509 certificates; JKS keystore; PKIX CertPathValidator; PKIX CertPathBuilder; LDAP, Collection CertStores, JavaPolicy Policy; JavaLoginConfig Configuration)
+DEBUG 2009-02-12 15:49:34 [o.a.c.httpclient.HttpClient.<clinit>: 81] SunRsaSign 1.5: Sun RSA signature provider
+DEBUG 2009-02-12 15:49:34 [o.a.c.httpclient.HttpClient.<clinit>: 81] SunJSSE 1.6: Sun JSSE provider(PKCS12, SunX509 key/trust factories, SSLv3, TLSv1)
+DEBUG 2009-02-12 15:49:34 [o.a.c.httpclient.HttpClient.<clinit>: 81] SunJCE 1.6: SunJCE Provider (implements RSA, DES, Triple DES, AES, Blowfish, ARCFOUR, RC2, PBE, Diffie-Hellman, HMAC)
+DEBUG 2009-02-12 15:49:34 [o.a.c.httpclient.HttpClient.<clinit>: 81] SunJGSS 1.0: Sun (Kerberos v5, SPNEGO)
+DEBUG 2009-02-12 15:49:34 [o.a.c.httpclient.HttpClient.<clinit>: 81] SunSASL 1.5: Sun SASL provider(implements client mechanisms for: DIGEST-MD5, GSSAPI, EXTERNAL, PLAIN, CRAM-MD5; server mechanisms for: DIGEST-MD5, GSSAPI, CRAM-MD5)
+DEBUG 2009-02-12 15:49:34 [o.a.c.httpclient.HttpClient.<clinit>: 81] XMLDSig 1.0: XMLDSig (DOM XMLSignatureFactory; DOM KeyInfoFactory)
+DEBUG 2009-02-12 15:49:34 [o.a.c.httpclient.HttpClient.<clinit>: 81] SunPCSC 1.6: Sun PC/SC provider
+DEBUG 2009-02-12 15:49:34 [o.a.c.httpclient.HttpClient.<clinit>: 81] SunMSCAPI 1.6: Sun's Microsoft Crypto API provider
+DEBUG 2009-02-12 15:49:34 [         o.a.c.h.HttpConnection.open:691] Open connection to ecs.amazonaws.jp:80
+DEBUG 2009-02-12 15:49:34 [.HttpMethodDirector.executeWithRetry:403] Closing the connection.
+DEBUG 2009-02-12 15:49:34 [.HttpMethodDirector.executeWithRetry:433] Method retry handler returned false. Automatic recovery will not be attempted
+DEBUG 2009-02-12 15:49:34 [.h.HttpConnection.releaseConnection:1177] Releasing connection back to connection manager.
+DEBUG 2009-02-12 15:52:56 [c.h.p.DefaultHttpParams.setParameter:150] Set parameter http.useragent = Jakarta Commons-HttpClient/3.0
+DEBUG 2009-02-12 15:52:56 [c.h.p.DefaultHttpParams.setParameter:150] Set parameter http.protocol.version = HTTP/1.1
+DEBUG 2009-02-12 15:52:56 [c.h.p.DefaultHttpParams.setParameter:150] Set parameter http.connection-manager.class = class org.apache.commons.httpclient.SimpleHttpConnectionManager
+DEBUG 2009-02-12 15:52:56 [c.h.p.DefaultHttpParams.setParameter:150] Set parameter http.protocol.cookie-policy = rfc2109
+DEBUG 2009-02-12 15:52:56 [c.h.p.DefaultHttpParams.setParameter:150] Set parameter http.protocol.element-charset = US-ASCII
+DEBUG 2009-02-12 15:52:56 [c.h.p.DefaultHttpParams.setParameter:150] Set parameter http.protocol.content-charset = ISO-8859-1
+DEBUG 2009-02-12 15:52:56 [c.h.p.DefaultHttpParams.setParameter:150] Set parameter http.method.retry-handler = org.apache.commons.httpclient.DefaultHttpMethodRetryHandler@7a84e4
+DEBUG 2009-02-12 15:52:56 [c.h.p.DefaultHttpParams.setParameter:150] Set parameter http.dateparser.patterns = [EEE, dd MMM yyyy HH:mm:ss zzz, EEEE, dd-MMM-yy HH:mm:ss zzz, EEE MMM d HH:mm:ss yyyy, EEE, dd-MMM-yyyy HH:mm:ss z, EEE, dd-MMM-yyyy HH-mm-ss z, EEE, dd MMM yy HH:mm:ss z, EEE dd-MMM-yyyy HH:mm:ss z, EEE dd MMM yyyy HH:mm:ss z, EEE dd-MMM-yyyy HH-mm-ss z, EEE dd-MMM-yy HH:mm:ss z, EEE dd MMM yy HH:mm:ss z, EEE,dd-MMM-yy HH:mm:ss z, EEE,dd-MMM-yyyy HH:mm:ss z, EEE, dd-MM-yyyy HH:mm:ss z]
+DEBUG 2009-02-12 15:52:56 [o.a.c.httpclient.HttpClient.<clinit>: 71] Java version: 1.6.0_11
+DEBUG 2009-02-12 15:52:56 [o.a.c.httpclient.HttpClient.<clinit>: 72] Java vendor: Sun Microsystems Inc.
+DEBUG 2009-02-12 15:52:56 [o.a.c.httpclient.HttpClient.<clinit>: 73] Java class path: target/amazonchecker.jar
+DEBUG 2009-02-12 15:52:56 [o.a.c.httpclient.HttpClient.<clinit>: 74] Operating system name: Windows XP
+DEBUG 2009-02-12 15:52:56 [o.a.c.httpclient.HttpClient.<clinit>: 75] Operating system architecture: x86
+DEBUG 2009-02-12 15:52:56 [o.a.c.httpclient.HttpClient.<clinit>: 76] Operating system version: 5.1
+DEBUG 2009-02-12 15:52:56 [o.a.c.httpclient.HttpClient.<clinit>: 81] SUN 1.6: SUN (DSA key/parameter generation; DSA signing; SHA-1, MD5 digests; SecureRandom; X.509 certificates; JKS keystore; PKIX CertPathValidator; PKIX CertPathBuilder; LDAP, Collection CertStores, JavaPolicy Policy; JavaLoginConfig Configuration)
+DEBUG 2009-02-12 15:52:56 [o.a.c.httpclient.HttpClient.<clinit>: 81] SunRsaSign 1.5: Sun RSA signature provider
+DEBUG 2009-02-12 15:52:56 [o.a.c.httpclient.HttpClient.<clinit>: 81] SunJSSE 1.6: Sun JSSE provider(PKCS12, SunX509 key/trust factories, SSLv3, TLSv1)
+DEBUG 2009-02-12 15:52:56 [o.a.c.httpclient.HttpClient.<clinit>: 81] SunJCE 1.6: SunJCE Provider (implements RSA, DES, Triple DES, AES, Blowfish, ARCFOUR, RC2, PBE, Diffie-Hellman, HMAC)
+DEBUG 2009-02-12 15:52:56 [o.a.c.httpclient.HttpClient.<clinit>: 81] SunJGSS 1.0: Sun (Kerberos v5, SPNEGO)
+DEBUG 2009-02-12 15:52:56 [o.a.c.httpclient.HttpClient.<clinit>: 81] SunSASL 1.5: Sun SASL provider(implements client mechanisms for: DIGEST-MD5, GSSAPI, EXTERNAL, PLAIN, CRAM-MD5; server mechanisms for: DIGEST-MD5, GSSAPI, CRAM-MD5)
+DEBUG 2009-02-12 15:52:56 [o.a.c.httpclient.HttpClient.<clinit>: 81] XMLDSig 1.0: XMLDSig (DOM XMLSignatureFactory; DOM KeyInfoFactory)
+DEBUG 2009-02-12 15:52:56 [o.a.c.httpclient.HttpClient.<clinit>: 81] SunPCSC 1.6: Sun PC/SC provider
+DEBUG 2009-02-12 15:52:56 [o.a.c.httpclient.HttpClient.<clinit>: 81] SunMSCAPI 1.6: Sun's Microsoft Crypto API provider
+DEBUG 2009-02-12 15:52:56 [         o.a.c.h.HttpConnection.open:691] Open connection to ecs.amazonaws.jp:80
+DEBUG 2009-02-12 15:52:57 [HttpMethodBase.addHostRequestHeader:1235] Adding Host request header
+WARN  2009-02-12 15:52:58 [a.c.h.HttpMethodBase.getResponseBody:676] Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+DEBUG 2009-02-12 15:52:58 [a.c.h.HttpMethodBase.getResponseBody:679] Buffering response body
+DEBUG 2009-02-12 15:52:58 [HttpMethodBase.shouldCloseConnection:921] Resorting to protocol version default close connection policy
+DEBUG 2009-02-12 15:52:58 [HttpMethodBase.shouldCloseConnection:925] Should NOT close connection, using HTTP/1.1
+DEBUG 2009-02-12 15:52:58 [.h.HttpConnection.releaseConnection:1177] Releasing connection back to connection manager.
+DEBUG 2009-02-12 16:22:54 [c.h.p.DefaultHttpParams.setParameter:150] Set parameter http.useragent = Jakarta Commons-HttpClient/3.0
+DEBUG 2009-02-12 16:22:55 [c.h.p.DefaultHttpParams.setParameter:150] Set parameter http.protocol.version = HTTP/1.1
+DEBUG 2009-02-12 16:22:55 [c.h.p.DefaultHttpParams.setParameter:150] Set parameter http.connection-manager.class = class org.apache.commons.httpclient.SimpleHttpConnectionManager
+DEBUG 2009-02-12 16:22:55 [c.h.p.DefaultHttpParams.setParameter:150] Set parameter http.protocol.cookie-policy = rfc2109
+DEBUG 2009-02-12 16:22:55 [c.h.p.DefaultHttpParams.setParameter:150] Set parameter http.protocol.element-charset = US-ASCII
+DEBUG 2009-02-12 16:22:55 [c.h.p.DefaultHttpParams.setParameter:150] Set parameter http.protocol.content-charset = ISO-8859-1
+DEBUG 2009-02-12 16:22:55 [c.h.p.DefaultHttpParams.setParameter:150] Set parameter http.method.retry-handler = org.apache.commons.httpclient.DefaultHttpMethodRetryHandler@16a9d42
+DEBUG 2009-02-12 16:22:55 [c.h.p.DefaultHttpParams.setParameter:150] Set parameter http.dateparser.patterns = [EEE, dd MMM yyyy HH:mm:ss zzz, EEEE, dd-MMM-yy HH:mm:ss zzz, EEE MMM d HH:mm:ss yyyy, EEE, dd-MMM-yyyy HH:mm:ss z, EEE, dd-MMM-yyyy HH-mm-ss z, EEE, dd MMM yy HH:mm:ss z, EEE dd-MMM-yyyy HH:mm:ss z, EEE dd MMM yyyy HH:mm:ss z, EEE dd-MMM-yyyy HH-mm-ss z, EEE dd-MMM-yy HH:mm:ss z, EEE dd MMM yy HH:mm:ss z, EEE,dd-MMM-yy HH:mm:ss z, EEE,dd-MMM-yyyy HH:mm:ss z, EEE, dd-MM-yyyy HH:mm:ss z]
+DEBUG 2009-02-12 16:22:55 [o.a.c.httpclient.HttpClient.<clinit>: 71] Java version: 1.6.0_11
+DEBUG 2009-02-12 16:22:55 [o.a.c.httpclient.HttpClient.<clinit>: 72] Java vendor: Sun Microsystems Inc.
+DEBUG 2009-02-12 16:22:55 [o.a.c.httpclient.HttpClient.<clinit>: 73] Java class path: target/amazonchecker.jar
+DEBUG 2009-02-12 16:22:55 [o.a.c.httpclient.HttpClient.<clinit>: 74] Operating system name: Windows XP
+DEBUG 2009-02-12 16:22:55 [o.a.c.httpclient.HttpClient.<clinit>: 75] Operating system architecture: x86
+DEBUG 2009-02-12 16:22:55 [o.a.c.httpclient.HttpClient.<clinit>: 76] Operating system version: 5.1
+DEBUG 2009-02-12 16:22:55 [o.a.c.httpclient.HttpClient.<clinit>: 81] SUN 1.6: SUN (DSA key/parameter generation; DSA signing; SHA-1, MD5 digests; SecureRandom; X.509 certificates; JKS keystore; PKIX CertPathValidator; PKIX CertPathBuilder; LDAP, Collection CertStores, JavaPolicy Policy; JavaLoginConfig Configuration)
+DEBUG 2009-02-12 16:22:55 [o.a.c.httpclient.HttpClient.<clinit>: 81] SunRsaSign 1.5: Sun RSA signature provider
+DEBUG 2009-02-12 16:22:55 [o.a.c.httpclient.HttpClient.<clinit>: 81] SunJSSE 1.6: Sun JSSE provider(PKCS12, SunX509 key/trust factories, SSLv3, TLSv1)
+DEBUG 2009-02-12 16:22:55 [o.a.c.httpclient.HttpClient.<clinit>: 81] SunJCE 1.6: SunJCE Provider (implements RSA, DES, Triple DES, AES, Blowfish, ARCFOUR, RC2, PBE, Diffie-Hellman, HMAC)
+DEBUG 2009-02-12 16:22:55 [o.a.c.httpclient.HttpClient.<clinit>: 81] SunJGSS 1.0: Sun (Kerberos v5, SPNEGO)
+DEBUG 2009-02-12 16:22:55 [o.a.c.httpclient.HttpClient.<clinit>: 81] SunSASL 1.5: Sun SASL provider(implements client mechanisms for: DIGEST-MD5, GSSAPI, EXTERNAL, PLAIN, CRAM-MD5; server mechanisms for: DIGEST-MD5, GSSAPI, CRAM-MD5)
+DEBUG 2009-02-12 16:22:55 [o.a.c.httpclient.HttpClient.<clinit>: 81] XMLDSig 1.0: XMLDSig (DOM XMLSignatureFactory; DOM KeyInfoFactory)
+DEBUG 2009-02-12 16:22:55 [o.a.c.httpclient.HttpClient.<clinit>: 81] SunPCSC 1.6: Sun PC/SC provider
+DEBUG 2009-02-12 16:22:55 [o.a.c.httpclient.HttpClient.<clinit>: 81] SunMSCAPI 1.6: Sun's Microsoft Crypto API provider
+DEBUG 2009-02-12 16:22:55 [         o.a.c.h.HttpConnection.open:691] Open connection to ecs.amazonaws.jp:80
+DEBUG 2009-02-12 16:22:55 [.HttpMethodDirector.executeWithRetry:403] Closing the connection.
+DEBUG 2009-02-12 16:22:55 [.HttpMethodDirector.executeWithRetry:433] Method retry handler returned false. Automatic recovery will not be attempted
+DEBUG 2009-02-12 16:22:55 [.h.HttpConnection.releaseConnection:1177] Releasing connection back to connection manager.
+DEBUG 2009-02-12 16:23:04 [c.h.p.DefaultHttpParams.setParameter:150] Set parameter http.useragent = Jakarta Commons-HttpClient/3.0
+DEBUG 2009-02-12 16:23:04 [c.h.p.DefaultHttpParams.setParameter:150] Set parameter http.protocol.version = HTTP/1.1
+DEBUG 2009-02-12 16:23:04 [c.h.p.DefaultHttpParams.setParameter:150] Set parameter http.connection-manager.class = class org.apache.commons.httpclient.SimpleHttpConnectionManager
+DEBUG 2009-02-12 16:23:04 [c.h.p.DefaultHttpParams.setParameter:150] Set parameter http.protocol.cookie-policy = rfc2109
+DEBUG 2009-02-12 16:23:04 [c.h.p.DefaultHttpParams.setParameter:150] Set parameter http.protocol.element-charset = US-ASCII
+DEBUG 2009-02-12 16:23:04 [c.h.p.DefaultHttpParams.setParameter:150] Set parameter http.protocol.content-charset = ISO-8859-1
+DEBUG 2009-02-12 16:23:04 [c.h.p.DefaultHttpParams.setParameter:150] Set parameter http.method.retry-handler = org.apache.commons.httpclient.DefaultHttpMethodRetryHandler@7a84e4
+DEBUG 2009-02-12 16:23:04 [c.h.p.DefaultHttpParams.setParameter:150] Set parameter http.dateparser.patterns = [EEE, dd MMM yyyy HH:mm:ss zzz, EEEE, dd-MMM-yy HH:mm:ss zzz, EEE MMM d HH:mm:ss yyyy, EEE, dd-MMM-yyyy HH:mm:ss z, EEE, dd-MMM-yyyy HH-mm-ss z, EEE, dd MMM yy HH:mm:ss z, EEE dd-MMM-yyyy HH:mm:ss z, EEE dd MMM yyyy HH:mm:ss z, EEE dd-MMM-yyyy HH-mm-ss z, EEE dd-MMM-yy HH:mm:ss z, EEE dd MMM yy HH:mm:ss z, EEE,dd-MMM-yy HH:mm:ss z, EEE,dd-MMM-yyyy HH:mm:ss z, EEE, dd-MM-yyyy HH:mm:ss z]
+DEBUG 2009-02-12 16:23:04 [o.a.c.httpclient.HttpClient.<clinit>: 71] Java version: 1.6.0_11
+DEBUG 2009-02-12 16:23:04 [o.a.c.httpclient.HttpClient.<clinit>: 72] Java vendor: Sun Microsystems Inc.
+DEBUG 2009-02-12 16:23:04 [o.a.c.httpclient.HttpClient.<clinit>: 73] Java class path: target/amazonchecker.jar
+DEBUG 2009-02-12 16:23:04 [o.a.c.httpclient.HttpClient.<clinit>: 74] Operating system name: Windows XP
+DEBUG 2009-02-12 16:23:04 [o.a.c.httpclient.HttpClient.<clinit>: 75] Operating system architecture: x86
+DEBUG 2009-02-12 16:23:04 [o.a.c.httpclient.HttpClient.<clinit>: 76] Operating system version: 5.1
+DEBUG 2009-02-12 16:23:04 [o.a.c.httpclient.HttpClient.<clinit>: 81] SUN 1.6: SUN (DSA key/parameter generation; DSA signing; SHA-1, MD5 digests; SecureRandom; X.509 certificates; JKS keystore; PKIX CertPathValidator; PKIX CertPathBuilder; LDAP, Collection CertStores, JavaPolicy Policy; JavaLoginConfig Configuration)
+DEBUG 2009-02-12 16:23:04 [o.a.c.httpclient.HttpClient.<clinit>: 81] SunRsaSign 1.5: Sun RSA signature provider
+DEBUG 2009-02-12 16:23:04 [o.a.c.httpclient.HttpClient.<clinit>: 81] SunJSSE 1.6: Sun JSSE provider(PKCS12, SunX509 key/trust factories, SSLv3, TLSv1)
+DEBUG 2009-02-12 16:23:04 [o.a.c.httpclient.HttpClient.<clinit>: 81] SunJCE 1.6: SunJCE Provider (implements RSA, DES, Triple DES, AES, Blowfish, ARCFOUR, RC2, PBE, Diffie-Hellman, HMAC)
+DEBUG 2009-02-12 16:23:04 [o.a.c.httpclient.HttpClient.<clinit>: 81] SunJGSS 1.0: Sun (Kerberos v5, SPNEGO)
+DEBUG 2009-02-12 16:23:04 [o.a.c.httpclient.HttpClient.<clinit>: 81] SunSASL 1.5: Sun SASL provider(implements client mechanisms for: DIGEST-MD5, GSSAPI, EXTERNAL, PLAIN, CRAM-MD5; server mechanisms for: DIGEST-MD5, GSSAPI, CRAM-MD5)
+DEBUG 2009-02-12 16:23:04 [o.a.c.httpclient.HttpClient.<clinit>: 81] XMLDSig 1.0: XMLDSig (DOM XMLSignatureFactory; DOM KeyInfoFactory)
+DEBUG 2009-02-12 16:23:04 [o.a.c.httpclient.HttpClient.<clinit>: 81] SunPCSC 1.6: Sun PC/SC provider
+DEBUG 2009-02-12 16:23:04 [o.a.c.httpclient.HttpClient.<clinit>: 81] SunMSCAPI 1.6: Sun's Microsoft Crypto API provider
+DEBUG 2009-02-12 16:23:04 [         o.a.c.h.HttpConnection.open:691] Open connection to ecs.amazonaws.jp:80
+DEBUG 2009-02-12 16:23:04 [.HttpMethodDirector.executeWithRetry:403] Closing the connection.
+DEBUG 2009-02-12 16:23:04 [.HttpMethodDirector.executeWithRetry:433] Method retry handler returned false. Automatic recovery will not be attempted
+DEBUG 2009-02-12 16:23:04 [.h.HttpConnection.releaseConnection:1177] Releasing connection back to connection manager.
+DEBUG 2009-02-12 16:23:24 [c.h.p.DefaultHttpParams.setParameter:150] Set parameter http.useragent = Jakarta Commons-HttpClient/3.0
+DEBUG 2009-02-12 16:23:24 [c.h.p.DefaultHttpParams.setParameter:150] Set parameter http.protocol.version = HTTP/1.1
+DEBUG 2009-02-12 16:23:24 [c.h.p.DefaultHttpParams.setParameter:150] Set parameter http.connection-manager.class = class org.apache.commons.httpclient.SimpleHttpConnectionManager
+DEBUG 2009-02-12 16:23:24 [c.h.p.DefaultHttpParams.setParameter:150] Set parameter http.protocol.cookie-policy = rfc2109
+DEBUG 2009-02-12 16:23:24 [c.h.p.DefaultHttpParams.setParameter:150] Set parameter http.protocol.element-charset = US-ASCII
+DEBUG 2009-02-12 16:23:24 [c.h.p.DefaultHttpParams.setParameter:150] Set parameter http.protocol.content-charset = ISO-8859-1
+DEBUG 2009-02-12 16:23:24 [c.h.p.DefaultHttpParams.setParameter:150] Set parameter http.method.retry-handler = org.apache.commons.httpclient.DefaultHttpMethodRetryHandler@7a84e4
+DEBUG 2009-02-12 16:23:24 [c.h.p.DefaultHttpParams.setParameter:150] Set parameter http.dateparser.patterns = [EEE, dd MMM yyyy HH:mm:ss zzz, EEEE, dd-MMM-yy HH:mm:ss zzz, EEE MMM d HH:mm:ss yyyy, EEE, dd-MMM-yyyy HH:mm:ss z, EEE, dd-MMM-yyyy HH-mm-ss z, EEE, dd MMM yy HH:mm:ss z, EEE dd-MMM-yyyy HH:mm:ss z, EEE dd MMM yyyy HH:mm:ss z, EEE dd-MMM-yyyy HH-mm-ss z, EEE dd-MMM-yy HH:mm:ss z, EEE dd MMM yy HH:mm:ss z, EEE,dd-MMM-yy HH:mm:ss z, EEE,dd-MMM-yyyy HH:mm:ss z, EEE, dd-MM-yyyy HH:mm:ss z]
+DEBUG 2009-02-12 16:23:24 [o.a.c.httpclient.HttpClient.<clinit>: 71] Java version: 1.6.0_11
+DEBUG 2009-02-12 16:23:24 [o.a.c.httpclient.HttpClient.<clinit>: 72] Java vendor: Sun Microsystems Inc.
+DEBUG 2009-02-12 16:23:24 [o.a.c.httpclient.HttpClient.<clinit>: 73] Java class path: target/amazonchecker.jar
+DEBUG 2009-02-12 16:23:24 [o.a.c.httpclient.HttpClient.<clinit>: 74] Operating system name: Windows XP
+DEBUG 2009-02-12 16:23:24 [o.a.c.httpclient.HttpClient.<clinit>: 75] Operating system architecture: x86
+DEBUG 2009-02-12 16:23:24 [o.a.c.httpclient.HttpClient.<clinit>: 76] Operating system version: 5.1
+DEBUG 2009-02-12 16:23:24 [o.a.c.httpclient.HttpClient.<clinit>: 81] SUN 1.6: SUN (DSA key/parameter generation; DSA signing; SHA-1, MD5 digests; SecureRandom; X.509 certificates; JKS keystore; PKIX CertPathValidator; PKIX CertPathBuilder; LDAP, Collection CertStores, JavaPolicy Policy; JavaLoginConfig Configuration)
+DEBUG 2009-02-12 16:23:24 [o.a.c.httpclient.HttpClient.<clinit>: 81] SunRsaSign 1.5: Sun RSA signature provider
+DEBUG 2009-02-12 16:23:24 [o.a.c.httpclient.HttpClient.<clinit>: 81] SunJSSE 1.6: Sun JSSE provider(PKCS12, SunX509 key/trust factories, SSLv3, TLSv1)
+DEBUG 2009-02-12 16:23:24 [o.a.c.httpclient.HttpClient.<clinit>: 81] SunJCE 1.6: SunJCE Provider (implements RSA, DES, Triple DES, AES, Blowfish, ARCFOUR, RC2, PBE, Diffie-Hellman, HMAC)
+DEBUG 2009-02-12 16:23:24 [o.a.c.httpclient.HttpClient.<clinit>: 81] SunJGSS 1.0: Sun (Kerberos v5, SPNEGO)
+DEBUG 2009-02-12 16:23:24 [o.a.c.httpclient.HttpClient.<clinit>: 81] SunSASL 1.5: Sun SASL provider(implements client mechanisms for: DIGEST-MD5, GSSAPI, EXTERNAL, PLAIN, CRAM-MD5; server mechanisms for: DIGEST-MD5, GSSAPI, CRAM-MD5)
+DEBUG 2009-02-12 16:23:24 [o.a.c.httpclient.HttpClient.<clinit>: 81] XMLDSig 1.0: XMLDSig (DOM XMLSignatureFactory; DOM KeyInfoFactory)
+DEBUG 2009-02-12 16:23:24 [o.a.c.httpclient.HttpClient.<clinit>: 81] SunPCSC 1.6: Sun PC/SC provider
+DEBUG 2009-02-12 16:23:24 [o.a.c.httpclient.HttpClient.<clinit>: 81] SunMSCAPI 1.6: Sun's Microsoft Crypto API provider
+DEBUG 2009-02-12 16:23:24 [         o.a.c.h.HttpConnection.open:691] Open connection to ecs.amazonaws.jp:80
+DEBUG 2009-02-12 16:23:25 [HttpMethodBase.addHostRequestHeader:1235] Adding Host request header
+WARN  2009-02-12 16:23:26 [a.c.h.HttpMethodBase.getResponseBody:676] Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+DEBUG 2009-02-12 16:23:26 [a.c.h.HttpMethodBase.getResponseBody:679] Buffering response body
+DEBUG 2009-02-12 16:23:26 [HttpMethodBase.shouldCloseConnection:921] Resorting to protocol version default close connection policy
+DEBUG 2009-02-12 16:23:26 [HttpMethodBase.shouldCloseConnection:925] Should NOT close connection, using HTTP/1.1
+DEBUG 2009-02-12 16:23:26 [.h.HttpConnection.releaseConnection:1177] Releasing connection back to connection manager.
+DEBUG 2009-02-12 16:23:39 [c.h.p.DefaultHttpParams.setParameter:150] Set parameter http.useragent = Jakarta Commons-HttpClient/3.0
+DEBUG 2009-02-12 16:23:39 [c.h.p.DefaultHttpParams.setParameter:150] Set parameter http.protocol.version = HTTP/1.1
+DEBUG 2009-02-12 16:23:39 [c.h.p.DefaultHttpParams.setParameter:150] Set parameter http.connection-manager.class = class org.apache.commons.httpclient.SimpleHttpConnectionManager
+DEBUG 2009-02-12 16:23:39 [c.h.p.DefaultHttpParams.setParameter:150] Set parameter http.protocol.cookie-policy = rfc2109
+DEBUG 2009-02-12 16:23:39 [c.h.p.DefaultHttpParams.setParameter:150] Set parameter http.protocol.element-charset = US-ASCII
+DEBUG 2009-02-12 16:23:39 [c.h.p.DefaultHttpParams.setParameter:150] Set parameter http.protocol.content-charset = ISO-8859-1
+DEBUG 2009-02-12 16:23:39 [c.h.p.DefaultHttpParams.setParameter:150] Set parameter http.method.retry-handler = org.apache.commons.httpclient.DefaultHttpMethodRetryHandler@7a84e4
+DEBUG 2009-02-12 16:23:39 [c.h.p.DefaultHttpParams.setParameter:150] Set parameter http.dateparser.patterns = [EEE, dd MMM yyyy HH:mm:ss zzz, EEEE, dd-MMM-yy HH:mm:ss zzz, EEE MMM d HH:mm:ss yyyy, EEE, dd-MMM-yyyy HH:mm:ss z, EEE, dd-MMM-yyyy HH-mm-ss z, EEE, dd MMM yy HH:mm:ss z, EEE dd-MMM-yyyy HH:mm:ss z, EEE dd MMM yyyy HH:mm:ss z, EEE dd-MMM-yyyy HH-mm-ss z, EEE dd-MMM-yy HH:mm:ss z, EEE dd MMM yy HH:mm:ss z, EEE,dd-MMM-yy HH:mm:ss z, EEE,dd-MMM-yyyy HH:mm:ss z, EEE, dd-MM-yyyy HH:mm:ss z]
+DEBUG 2009-02-12 16:23:39 [o.a.c.httpclient.HttpClient.<clinit>: 71] Java version: 1.6.0_11
+DEBUG 2009-02-12 16:23:39 [o.a.c.httpclient.HttpClient.<clinit>: 72] Java vendor: Sun Microsystems Inc.
+DEBUG 2009-02-12 16:23:39 [o.a.c.httpclient.HttpClient.<clinit>: 73] Java class path: target/amazonchecker.jar
+DEBUG 2009-02-12 16:23:39 [o.a.c.httpclient.HttpClient.<clinit>: 74] Operating system name: Windows XP
+DEBUG 2009-02-12 16:23:39 [o.a.c.httpclient.HttpClient.<clinit>: 75] Operating system architecture: x86
+DEBUG 2009-02-12 16:23:39 [o.a.c.httpclient.HttpClient.<clinit>: 76] Operating system version: 5.1
+DEBUG 2009-02-12 16:23:39 [o.a.c.httpclient.HttpClient.<clinit>: 81] SUN 1.6: SUN (DSA key/parameter generation; DSA signing; SHA-1, MD5 digests; SecureRandom; X.509 certificates; JKS keystore; PKIX CertPathValidator; PKIX CertPathBuilder; LDAP, Collection CertStores, JavaPolicy Policy; JavaLoginConfig Configuration)
+DEBUG 2009-02-12 16:23:39 [o.a.c.httpclient.HttpClient.<clinit>: 81] SunRsaSign 1.5: Sun RSA signature provider
+DEBUG 2009-02-12 16:23:39 [o.a.c.httpclient.HttpClient.<clinit>: 81] SunJSSE 1.6: Sun JSSE provider(PKCS12, SunX509 key/trust factories, SSLv3, TLSv1)
+DEBUG 2009-02-12 16:23:39 [o.a.c.httpclient.HttpClient.<clinit>: 81] SunJCE 1.6: SunJCE Provider (implements RSA, DES, Triple DES, AES, Blowfish, ARCFOUR, RC2, PBE, Diffie-Hellman, HMAC)
+DEBUG 2009-02-12 16:23:39 [o.a.c.httpclient.HttpClient.<clinit>: 81] SunJGSS 1.0: Sun (Kerberos v5, SPNEGO)
+DEBUG 2009-02-12 16:23:39 [o.a.c.httpclient.HttpClient.<clinit>: 81] SunSASL 1.5: Sun SASL provider(implements client mechanisms for: DIGEST-MD5, GSSAPI, EXTERNAL, PLAIN, CRAM-MD5; server mechanisms for: DIGEST-MD5, GSSAPI, CRAM-MD5)
+DEBUG 2009-02-12 16:23:39 [o.a.c.httpclient.HttpClient.<clinit>: 81] XMLDSig 1.0: XMLDSig (DOM XMLSignatureFactory; DOM KeyInfoFactory)
+DEBUG 2009-02-12 16:23:39 [o.a.c.httpclient.HttpClient.<clinit>: 81] SunPCSC 1.6: Sun PC/SC provider
+DEBUG 2009-02-12 16:23:39 [o.a.c.httpclient.HttpClient.<clinit>: 81] SunMSCAPI 1.6: Sun's Microsoft Crypto API provider
+DEBUG 2009-02-12 16:23:39 [         o.a.c.h.HttpConnection.open:691] Open connection to ecs.amazonaws.jp:80
+DEBUG 2009-02-12 16:23:39 [HttpMethodBase.addHostRequestHeader:1235] Adding Host request header
+WARN  2009-02-12 16:23:40 [a.c.h.HttpMethodBase.getResponseBody:676] Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+DEBUG 2009-02-12 16:23:40 [a.c.h.HttpMethodBase.getResponseBody:679] Buffering response body
+DEBUG 2009-02-12 16:23:40 [HttpMethodBase.shouldCloseConnection:921] Resorting to protocol version default close connection policy
+DEBUG 2009-02-12 16:23:40 [HttpMethodBase.shouldCloseConnection:925] Should NOT close connection, using HTTP/1.1
+DEBUG 2009-02-12 16:23:40 [.h.HttpConnection.releaseConnection:1177] Releasing connection back to connection manager.
+DEBUG 2009-02-12 16:52:09 [c.h.p.DefaultHttpParams.setParameter:150] Set parameter http.useragent = Jakarta Commons-HttpClient/3.0
+DEBUG 2009-02-12 16:52:09 [c.h.p.DefaultHttpParams.setParameter:150] Set parameter http.protocol.version = HTTP/1.1
+DEBUG 2009-02-12 16:52:09 [c.h.p.DefaultHttpParams.setParameter:150] Set parameter http.connection-manager.class = class org.apache.commons.httpclient.SimpleHttpConnectionManager
+DEBUG 2009-02-12 16:52:09 [c.h.p.DefaultHttpParams.setParameter:150] Set parameter http.protocol.cookie-policy = rfc2109
+DEBUG 2009-02-12 16:52:09 [c.h.p.DefaultHttpParams.setParameter:150] Set parameter http.protocol.element-charset = US-ASCII
+DEBUG 2009-02-12 16:52:09 [c.h.p.DefaultHttpParams.setParameter:150] Set parameter http.protocol.content-charset = ISO-8859-1
+DEBUG 2009-02-12 16:52:09 [c.h.p.DefaultHttpParams.setParameter:150] Set parameter http.method.retry-handler = org.apache.commons.httpclient.DefaultHttpMethodRetryHandler@7a84e4
+DEBUG 2009-02-12 16:52:09 [c.h.p.DefaultHttpParams.setParameter:150] Set parameter http.dateparser.patterns = [EEE, dd MMM yyyy HH:mm:ss zzz, EEEE, dd-MMM-yy HH:mm:ss zzz, EEE MMM d HH:mm:ss yyyy, EEE, dd-MMM-yyyy HH:mm:ss z, EEE, dd-MMM-yyyy HH-mm-ss z, EEE, dd MMM yy HH:mm:ss z, EEE dd-MMM-yyyy HH:mm:ss z, EEE dd MMM yyyy HH:mm:ss z, EEE dd-MMM-yyyy HH-mm-ss z, EEE dd-MMM-yy HH:mm:ss z, EEE dd MMM yy HH:mm:ss z, EEE,dd-MMM-yy HH:mm:ss z, EEE,dd-MMM-yyyy HH:mm:ss z, EEE, dd-MM-yyyy HH:mm:ss z]
+DEBUG 2009-02-12 16:52:09 [o.a.c.httpclient.HttpClient.<clinit>: 71] Java version: 1.6.0_11
+DEBUG 2009-02-12 16:52:09 [o.a.c.httpclient.HttpClient.<clinit>: 72] Java vendor: Sun Microsystems Inc.
+DEBUG 2009-02-12 16:52:09 [o.a.c.httpclient.HttpClient.<clinit>: 73] Java class path: target/amazonchecker.jar
+DEBUG 2009-02-12 16:52:09 [o.a.c.httpclient.HttpClient.<clinit>: 74] Operating system name: Windows XP
+DEBUG 2009-02-12 16:52:09 [o.a.c.httpclient.HttpClient.<clinit>: 75] Operating system architecture: x86
+DEBUG 2009-02-12 16:52:09 [o.a.c.httpclient.HttpClient.<clinit>: 76] Operating system version: 5.1
+DEBUG 2009-02-12 16:52:09 [o.a.c.httpclient.HttpClient.<clinit>: 81] SUN 1.6: SUN (DSA key/parameter generation; DSA signing; SHA-1, MD5 digests; SecureRandom; X.509 certificates; JKS keystore; PKIX CertPathValidator; PKIX CertPathBuilder; LDAP, Collection CertStores, JavaPolicy Policy; JavaLoginConfig Configuration)
+DEBUG 2009-02-12 16:52:09 [o.a.c.httpclient.HttpClient.<clinit>: 81] SunRsaSign 1.5: Sun RSA signature provider
+DEBUG 2009-02-12 16:52:09 [o.a.c.httpclient.HttpClient.<clinit>: 81] SunJSSE 1.6: Sun JSSE provider(PKCS12, SunX509 key/trust factories, SSLv3, TLSv1)
+DEBUG 2009-02-12 16:52:09 [o.a.c.httpclient.HttpClient.<clinit>: 81] SunJCE 1.6: SunJCE Provider (implements RSA, DES, Triple DES, AES, Blowfish, ARCFOUR, RC2, PBE, Diffie-Hellman, HMAC)
+DEBUG 2009-02-12 16:52:09 [o.a.c.httpclient.HttpClient.<clinit>: 81] SunJGSS 1.0: Sun (Kerberos v5, SPNEGO)
+DEBUG 2009-02-12 16:52:09 [o.a.c.httpclient.HttpClient.<clinit>: 81] SunSASL 1.5: Sun SASL provider(implements client mechanisms for: DIGEST-MD5, GSSAPI, EXTERNAL, PLAIN, CRAM-MD5; server mechanisms for: DIGEST-MD5, GSSAPI, CRAM-MD5)
+DEBUG 2009-02-12 16:52:09 [o.a.c.httpclient.HttpClient.<clinit>: 81] XMLDSig 1.0: XMLDSig (DOM XMLSignatureFactory; DOM KeyInfoFactory)
+DEBUG 2009-02-12 16:52:09 [o.a.c.httpclient.HttpClient.<clinit>: 81] SunPCSC 1.6: Sun PC/SC provider
+DEBUG 2009-02-12 16:52:09 [o.a.c.httpclient.HttpClient.<clinit>: 81] SunMSCAPI 1.6: Sun's Microsoft Crypto API provider
+DEBUG 2009-02-12 16:52:09 [         o.a.c.h.HttpConnection.open:691] Open connection to ecs.amazonaws.jp:80
+DEBUG 2009-02-12 16:52:10 [HttpMethodBase.addHostRequestHeader:1235] Adding Host request header
+WARN  2009-02-12 16:52:10 [a.c.h.HttpMethodBase.getResponseBody:676] Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+DEBUG 2009-02-12 16:52:10 [a.c.h.HttpMethodBase.getResponseBody:679] Buffering response body
+DEBUG 2009-02-12 16:52:11 [HttpMethodBase.shouldCloseConnection:921] Resorting to protocol version default close connection policy
+DEBUG 2009-02-12 16:52:11 [HttpMethodBase.shouldCloseConnection:925] Should NOT close connection, using HTTP/1.1
+DEBUG 2009-02-12 16:52:11 [.h.HttpConnection.releaseConnection:1177] Releasing connection back to connection manager.
